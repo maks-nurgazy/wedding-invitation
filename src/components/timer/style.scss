@@ -1,0 +1,23 @@
+.timer-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+  .timer-segment {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      margin-top: 2px;
+      font-size: 10px;
+    }
+
+    .time {
+      font-size: 20px;
+    }
+  }
+
+  .divider {
+    align-self: center;
+    margin-top: -4px;
+  }
+}
