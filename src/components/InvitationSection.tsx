@@ -9,9 +9,13 @@ export function InvitationSection() {
               <div className='right-vec'></div>
               <div className='inner'>
                 <h2>Save the Date</h2>
-                <span>For the wedding of</span>
-                <h3>Dorian & Blit</h3>
-                <p>Friday February 2020 At 6 O clock PM ,Hotle Seraton, Gulistan Bonani 9500, Dhaka Bangladesh</p>
+                <span>Дорогой(ая)</span>
+                <h3>Максатбек & Актилек</h3>
+                <p>
+                  спешим сообщить тебе классную новость. У НАС СВАДЬБА! В этот день мы хотим оказаться в окружении самых
+                  дорогих, любимых и важных для нас людей. С огромным удовольствием приглашаем вас разделить с нами этот
+                  праздник.
+                </p>
                 <a href='#rsvp' className='theme-btn' id='scroll'>
                   RSVP now
                 </a>
