@@ -22,32 +22,38 @@ export function GallerySection() {
                   <img src='/images/gallery/img-1.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
+
+              <div className='grid grid-item width2'>
+                <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                  <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
+                </a>
+              </div>
+
               <div className='grid grid-item'>
                 <a href='/images/gallery/img-2.jpg' className='fancybox' data-fancybox-group='gall-1'>
                   <img src='/images/gallery/img-2.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
-              <div className='grid grid-item'>
-                <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
-                  <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
-                </a>
-              </div>
+
               <div className='grid grid-item'>
                 <a href='/images/gallery/img-4.jpg' className='fancybox' data-fancybox-group='gall-1'>
                   <img src='/images/gallery/img-4.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
-              <div className='grid grid-item width2'>
+
+              <div className='grid grid-item'>
                 <a href='/images/gallery/img-5.jpg' className='fancybox' data-fancybox-group='gall-1'>
                   <img src='/images/gallery/img-5.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
+
               <div className='grid grid-item width2'>
                 <a href='/images/gallery/img-7.jpg' className='fancybox' data-fancybox-group='gall-1'>
                   <img src='/images/gallery/img-7.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
-              <div className='grid grid-item width2'>
+
+              <div className='grid grid-item'>
                 <a
                   href='https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1'
                   data-type='iframe'

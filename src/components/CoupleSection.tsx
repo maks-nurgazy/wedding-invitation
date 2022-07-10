@@ -18,11 +18,11 @@ export function CoupleSection() {
             <div className='couple-area'>
               <div className='couple-row clearfix'>
                 <div className='img-holder'>
-                  <img src='/images/couple/img-1.jpg' alt='' />
+                  <img src='/images/couple/janara.jpg' alt='' />
                 </div>
                 <div className='details'>
                   <div className='inner'>
-                    <h2>Dorina Wiliam</h2>
+                    <h2>Zhanara Maisalbekova</h2>
                     <h4>Hi Dear, I am Dorian Wiliam.</h4>
                     <p>
                       A collection of textile samples lay spread out on the table Samsa was a travelling salesman and

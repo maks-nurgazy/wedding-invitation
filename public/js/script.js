@@ -8,7 +8,7 @@
     -------------------------------------------*/
     // Animated scroll specific section
     if ($("#scroll").length) {
-        $('#scroll').on('click', function(e){     
+        $('#scroll').on('click', function(e){
             e.preventDefault();
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, "easeInOutExpo");
             return false;
@@ -137,7 +137,7 @@
                     var innerTranslate = slideProgress * innerOffset;
                     swiper.slides[i].querySelector(".slide-inner").style.transform =
                     "translate3d(" + innerTranslate + "px, 0, 0)";
-                }      
+                }
             },
 
             touchStart: function() {
@@ -260,7 +260,7 @@
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false
-    });    
+    });
 
 
     /*------------------------------------------
@@ -535,7 +535,7 @@
             dots: false,
             items: 1
         });
-    }   
+    }
 
 
     /*------------------------------------------
@@ -552,7 +552,7 @@
             dots: false,
             items: 1
         });
-    }   
+    }
 
 
     /*------------------------------------------
@@ -784,7 +784,7 @@
         WHEN WINDOW RESIZE
     ==========================================================================*/
     $(window).on("resize", function() {
-        
+
         toggleClassForSmallNav();
 
         clearTimeout($.data(this, 'resizeTimer'));
