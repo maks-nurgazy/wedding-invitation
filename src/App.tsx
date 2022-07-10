@@ -1,14 +1,11 @@
 /* External dependencies */
 
 /* Local dependencies */
-import { Banner } from './components/banner/Banner';
-import { History } from './components/history/History';
 
 function App() {
   return (
     <div className='App'>
-      <Banner></Banner>
-      <History></History>
+      <h1>Hello</h1>
     </div>
   );
 }
