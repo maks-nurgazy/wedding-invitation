@@ -562,7 +562,7 @@ input[type=radio]:checked:before {
 }
 .navbar .navbar-toggler-icon {
     color: #b08c3e;
-    
+
 }
 .navbar .navbar-nav .nav-link {
     font-family: 'Didact Gothic', sans-serif;
@@ -1349,7 +1349,7 @@ color: #b08c3e;
     margin: 0 auto 15px;
     -webkit-transition: all .5s;
   transition: all .5s;
-    
+
 }
 .friends .info {}
 .friends .info h6 {
@@ -1648,7 +1648,7 @@ overflow: hidden !important;
   left: 0px;
 }
 .when-where .content .cont .more:hover {
-   color: #1b1b1b; 
+   color: #1b1b1b;
 }
 .when-where .content .info h6 {
     font-size: 12px;
@@ -1679,7 +1679,7 @@ overflow: hidden !important;
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .when-where .content {
@@ -1853,7 +1853,7 @@ overflow: hidden !important;
   left: 0px;
 }
 .marybrian-blog .content .cont .more:hover {
-   color: #b08c3e; 
+   color: #b08c3e;
 }
 .marybrian-blog .content .info h6 {
     font-size: 12px;
@@ -1882,7 +1882,7 @@ overflow: hidden !important;
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .marybrian-blog .content {
@@ -2009,7 +2009,7 @@ overflow: hidden !important;
 }
 .blog-page .post-cont .tag:hover,
 .blog-page .post-cont .date:hover {
-  color: #b08c3e;  
+  color: #b08c3e;
 }
 .blog-page .post-cont h5 {
     font-size: 40px;
@@ -2132,7 +2132,7 @@ overflow: hidden !important;
     padding-top: 60px;
     margin-bottom: 0px;
 }
-.blog-comment-section h5 { 
+.blog-comment-section h5 {
     font-size: 27px;
 }
 .blog-post-comment-wrap {
@@ -2206,7 +2206,7 @@ overflow: hidden !important;
     border: 1px solid #b08c3e;
     color: #fff;
 }
-.blog-pagination-wrap li a i { 
+.blog-pagination-wrap li a i {
     font-size: 11px;
 }
 @media screen and (max-width: 768px) {
@@ -2499,7 +2499,7 @@ overflow: hidden !important;
         background: transparent;
         outline: none;
         color: #fff !important;
-        
+
     }
     .nav-scroll button span i {
         color: #1b1b1b;
@@ -2585,7 +2585,7 @@ overflow: hidden !important;
         font-size: 40px;
     }
     .top-footer h2 {
-        font-size: 40px; 
+        font-size: 40px;
     }
     .insta {
     margin-bottom: 0px;

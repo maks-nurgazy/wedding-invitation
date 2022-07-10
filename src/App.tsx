@@ -110,7 +110,7 @@ function App() {
         <div className='mary-hero js-fullheight'>
           <div className='flexslider js-fullheight'>
             <ul className='slides'>
-              <li className='bg-fixed' style={{ backgroundImage: 'url(images/slider/1.jpg)' }} data-overlay-dark='2'>
+              <li className='bg-fixed' style={{ backgroundImage: `url(/images/slider/1.jpg)` }} data-overlay-dark='2'>
                 <div className='overlay'></div>
                 <div className='container'>
                   <div className='row'>
@@ -123,7 +123,7 @@ function App() {
                   </div>
                 </div>
               </li>
-              <li className='bg-fixed' style={{ backgroundImage: 'url(images/slider/2.jpg)' }} data-overlay-dark='2'>
+              <li className='bg-fixed' style={{ backgroundImage: `url('/images/slider/2.jpg')` }} data-overlay-dark='2'>
                 <div className='overlay'></div>
                 <div className='container'>
                   <div className='row'>
@@ -182,7 +182,7 @@ function App() {
               <div className='item mb-30'>
                 <div className='img'>
                   {' '}
-                  <img src='images/bride.png' alt='' />{' '}
+                  <img src='/images/bride.png' alt='' />{' '}
                 </div>
                 <div className='info valign'>
                   <div className='full-width'>
@@ -609,7 +609,7 @@ function App() {
                 <div className='gallery-box'>
                   <div className='gallery-img'>
                     {' '}
-                    <img src='images/gallery/2.jpg' className='img-fluid mx-auto d-block' alt='' />{' '}
+                    <img src={'/images/gallery/2.jpg'} className='img-fluid mx-auto d-block' alt='' />{' '}
                   </div>
                   <div className='gallery-detail'>
                     <h4 className='mb-0'>Wedding Party</h4>

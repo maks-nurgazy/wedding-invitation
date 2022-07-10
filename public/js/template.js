@@ -2,14 +2,14 @@
 
 [ Custom settings ]
 
-01. Mobile 
+01. Mobile
 02. Preloader
 03. ScrollIt
 04. Full Height
 05. Animations
 06. Navbar scrolling background
 07. Close navbar-collapse when a clicked
-08. Sections background image from data background 
+08. Sections background image from data background
 09. YouTubePopUp
 10. Story owlCarousel
 11. Events owlCarousel
@@ -26,7 +26,7 @@
 
 (function () {
     'use strict';
-    
+
     // Mobile
     var isMobile = {
         Android: function () {
@@ -48,14 +48,14 @@
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    
-    // Preloader 
+
+    // Preloader
     $(window).load(function() {
     $('.preloader').fadeOut("slow");
     });
-    
+
     var wind = $(window);
-    
+
     // ScrollIt
     $.scrollIt({
       upKey: 38,                // key code to navigate to the next section
@@ -66,7 +66,7 @@
       onPageChange: null,       // function(pageIndex) that is called when page is changed
       topOffset: -70            // offste (in px) for fixed top navigation
     });
-    
+
     // Full Height
     var fullHeight = function () {
         if (!isMobile.any()) {
@@ -76,7 +76,7 @@
             });
         }
     };
-    
+
     // Animations
     var contentWayPoint = function () {
         var i = 0;
@@ -110,7 +110,7 @@
             offset: '85%'
         });
     };
-    
+
     // Navbar scrolling background
     wind.on("scroll",function () {
         var bodyScroll = wind.scrollTop(),
@@ -124,12 +124,12 @@
             logo.attr('src', 'images/logo-light.png');
         }
     });
-    
+
     // Close navbar-collapse when a  clicked
     $(".navbar-nav .dropdown-item a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
-    
+
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
@@ -137,14 +137,14 @@
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-    
+
     $(function () {
         contentWayPoint();
     });
-    
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
-    
+
     // Story owlCarousel
     $('.story .owl-carousel').owlCarousel({
         loop: true
@@ -168,7 +168,7 @@
             }
         }
     });
-    
+
     // Events owlCarousel
     $('.events .owl-carousel').owlCarousel({
         loop: true
@@ -192,7 +192,7 @@
             }
         }
     });
-    
+
     // Bridesmaid owlCarousel
     $('.bridesmaid .owl-carousel').owlCarousel({
         loop: true
@@ -214,7 +214,7 @@
             }
         }
     });
-    
+
     // Groomsmen owlCarousel
     $('.groomsmen .owl-carousel').owlCarousel({
         loop: true
@@ -236,7 +236,7 @@
             }
         }
     });
-    
+
     // Gift Registry owlCarousel
     $('.gift-registry .owl-carousel').owlCarousel({
         loop: true
@@ -258,7 +258,7 @@
             }
         }
     });
-    
+
     // Slider
     var sliderMain = function () {
         $('.flexslider').flexslider({
@@ -280,8 +280,8 @@
             }
         });
     };
-    
-    // Gallery 
+
+    // Gallery
     $(window).on("load", function () {
     var e = $(".gallery-filter")
         , a = $("#gallery-filter");
@@ -304,7 +304,7 @@
         }), !1
     })
 });
-    
+
     // Magnific Popup
     $(".img-zoom").magnificPopup({
     type: "image"
@@ -316,14 +316,14 @@
         , preload: [0, 1]
     }
 });
-    
+
     // Document on load.
     $(function () {
         fullHeight();
         contentWayPoint();
         sliderMain();
     });
-    
+
     // Progress-wrap
      var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
@@ -354,8 +354,8 @@
         jQuery('html, body').animate({ scrollTop: 0 }, duration);
         return false;
     })
-    
-    // RSVP FORM 
+
+    // RSVP FORM
     var form = $('.contact__form'),
         message = $('.contact__msg'),
         form_data;
@@ -385,8 +385,8 @@
         .done(done_func)
         .fail(fail_func);
     });
-    
-    
+
+
 }());
 
 
@@ -398,7 +398,7 @@
         day = hour * 24;
   let birthday = "Dec 24, 2022 00:00:00",
       countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+      x = setInterval(function() {
         let now = new Date().getTime(),
             distance = countDown - now;
 
@@ -422,4 +422,3 @@
         //seconds
       }, 0)
   }());
-    
