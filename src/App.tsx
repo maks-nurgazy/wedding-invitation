@@ -26,7 +26,6 @@ function App() {
         <ContactSection />
         <EventSection />
         <PartnersSection />
-        <BlogSection />
         <Footer />
       </div>
     </div>
