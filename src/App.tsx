@@ -18,7 +18,7 @@ function App() {
       <div className='page-wrapper flower-fixed-body'>
         <Preloader />
         <Header />
-        <HeroSlider />
+        <HeroSlider date={new Date('08/22/2022 23:59:59')} />
         <InvitationSection />
         <CoupleSection />
         <StorySection />
