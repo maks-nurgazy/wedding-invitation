@@ -1,971 +1,776 @@
 function App() {
   return (
     <div className='App'>
-      {/* <!-- Preloader --> */}
-      <div className='preloader'>
-        <div className='lds-heart'>
-          <div></div>
-        </div>
-      </div>
-      {/* <!-- Progress-wrapp scroll-button --> */}
-      <div className='progress-wrap'>
-        <svg className='progress-circle svg-content' width='100%' height='100%' viewBox='-1 -1 102 102'>
-          <path d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98' />
-        </svg>
-      </div>
-      {/* <!-- Navbar --> */}
-      <nav className='navbar navbar-expand-lg'>
-        <div className='container'>
-          {/* <!-- Logo --> */}
-          <div className='logo-wrapper navbar-brand valign'>
-            <div className='logo'>
-              {/* <!-- <img src="images/logo-light.png" className="logo-img" alt=""> --> */}
-              <a href='index.html'>
-                <h2>Mary &amp; Brian</h2>
-              </a>
-            </div>
-          </div>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            {' '}
-            <span className='icon-bar'>
-              <i className='ti-line-double'></i>
-            </span>{' '}
-          </button>
-          {/* <!-- Navbar links --> */}
-          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav ml-auto'>
-              <li className='nav-item'>
-                <a className='nav-link active' href='#' data-scroll-nav='0'>
-                  Home
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='1'>
-                  Couple
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='2'>
-                  Story
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='3'>
-                  Friends
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='4'>
-                  Events
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='5'>
-                  Gallery
-                </a>
-              </li>
-              {/* <!-- Dropdown Menu example
-                    <li className="nav-item dropdown"> <span className="nav-link"> Dropdown <i className="ti-angle-down"></i></span>
-                        <ul className="dropdown-menu last">
-                            <li className="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li className="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li className="dropdown-item"><span>Dropdown 2 <i className="ti-angle-right"></i></span>
-                                <ul className="sub-menu last">
-                                    <li className="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                    <li className="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                 </ul>
-                             </li>
-                        </ul>
-                    </li>
-                    --> */}
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='6'>
-                  When & Where
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#' data-scroll-nav='7'>
-                  R.S.V.P
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='blog.html'>
-                  Blog
-                </a>
-              </li>
-            </ul>
+      {/* <!-- start page-wrapper --> */}
+      <div className='page-wrapper flower-fixed-body'>
+        {/* <!-- start preloader --> */}
+        <div className='preloader'>
+          <div className='middle'>
+            <i className='fi flaticon-favorite-heart-button'></i>
+            <i className='fi flaticon-favorite-heart-button'></i>
+            <i className='fi flaticon-favorite-heart-button'></i>
+            <i className='fi flaticon-favorite-heart-button'></i>
           </div>
         </div>
-      </nav>
-      {/* <!-- Slider section --> */}
-      <header id='home' data-scroll-index='0'>
-        <div className='mary-hero js-fullheight'>
-          <div className='flexslider js-fullheight'>
-            <ul className='slides'>
-              <li
-                className='bg-fixed'
-                style={{ backgroundImage: `url(/images/slider/1.jpg)`, height: '20' }}
-                data-overlay-dark='2'
-              >
-                <div className='overlay'></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-md-12 text-center js-fullheight slider-text'>
-                      <div className='slider-text-inner mx-auto'>
-                        <h2>Mary & Brian</h2>
-                        <h6>24 December, 2022 — New York</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className='bg-fixed' style={{ backgroundImage: `url('/images/slider/2.jpg')` }} data-overlay-dark='2'>
-                <div className='overlay'></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-md-12 text-center js-fullheight slider-text'>
-                      <div className='slider-text-inner mx-auto'>
-                        <h2>We hope to see you soon</h2>
-                        <h6>24 December, 2022 — New York</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      {/* <!-- Welcome section --> */}
-      <div id='welcome' className='welcome section-padding'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center'>
-              <div className='welcome-mt'>
-                <div className='welcome-image-wrapper'>
-                  <div className='img'>
-                    <a href='#' data-scroll-nav='1'>
-                      <img src='images/couple.png' alt='' />
+        {/* <!-- end preloader --> */}
+
+        {/* <!-- Start header --> */}
+        <header id='header' className='site-header header-style-1'>
+          <div className='topbar'>
+            <div className='container'>
+              <div className='row'>
+                <div className='col col-xs-12'>
+                  <div className='site-logo'>
+                    <a href='index.html'>
+                      <h1>Dorian & Blit</h1>
+                      <span>Just Married</span>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-md-8 offset-md-2 text-center'>
-              <h6 className='section-subtitle'>Hello & Welcome</h6>
-              <h2 className='section-title'>We're getting married!</h2>
-              <p>
-                Today and always, beyond tomorrow, I need you beside me, always as my best friend, lover and forever
-                soul mate. Curabit aliquet orci elit genes tristique lorem commodo vitae. Tuliaum tincidunt nete sede
-                gravida alisuan neque libero hendrerit magnation sit amet mollis lacus ithe maurise. Dunya erat couple
-                wedding eda the semper. Event elit miss eget the solin miss citudino phasellus rutrum in the lacusi
-                events vestibulum elen ornare drana company tortori eget the solin miss citudino sellus rutrum in lacus
-                miss semper.
-              </p>
-            </div>
           </div>
-        </div>
-      </div>
-      {/* <!-- Bride & Groom section --> */}
-      <div id='couple' className='bride-groom clear section-padding bg-cream' data-scroll-index='1'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center mb-30 animate-box' data-animate-effect='fadeInUp'>
-              <h6 className='section-subtitle'>Bride & Groom</h6>
-              <h2 className='section-title'>Happy Couple</h2>
+          {/* <!-- end topbar --> */}
+          <nav className='navigation navbar navbar-default'>
+            <div className='container'>
+              <div className='navbar-header'>
+                <button type='button' className='open-btn'>
+                  <span className='sr-only'>Toggle navigation</span>
+                  <span className='icon-bar'></span>
+                  <span className='icon-bar'></span>
+                  <span className='icon-bar'></span>
+                </button>
+              </div>
+              <div id='navbar' className='navbar-collapse collapse navigation-holder'>
+                <button className='close-navbar'>
+                  <i className='ti-close'></i>
+                </button>
+                <ul className='nav navbar-nav'>
+                  <li className='menu-item-has-children'>
+                    <a href='#'>Home</a>
+                    <ul className='sub-menu'>
+                      <li>
+                        <a href='index.html'>Home announcement</a>
+                      </li>
+                      <li>
+                        <a href='index-2.html'>Home announcement static hero</a>
+                      </li>
+                      <li>
+                        <a href='index-3.html'>Home announcement video</a>
+                      </li>
+                      <li>
+                        <a href='index-4.html'>Home planner</a>
+                      </li>
+                      <li>
+                        <a href='index-5.html'>Home planner style 2</a>
+                      </li>
+                      <li>
+                        <a href='index-6.html'>Home planner slider</a>
+                      </li>
+                      <li>
+                        <a href='index-7.html'>Home planner video</a>
+                      </li>
+                      <li className='menu-item-has-children'>
+                        <a href='#Level3'>Thidr level</a>
+                        <ul className='sub-menu'>
+                          <li>
+                            <a href='#'>Level3</a>
+                          </li>
+                          <li>
+                            <a href='#'>Level3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='menu-item-has-children'>
+                    <a href='#'>The Wedding</a>
+                    <ul className='sub-menu'>
+                      <li>
+                        <a href='story.html'>Our story</a>
+                      </li>
+                      <li>
+                        <a href='invitation.html'>Invitation</a>
+                      </li>
+                      <li>
+                        <a href='bridesmaids-groomsmen.html'>Bridesmaid & Groomsman</a>
+                      </li>
+                      <li>
+                        <a href='accomodation.html'>Accomodation</a>
+                      </li>
+                      <li>
+                        <a href='rsvp.html'>RSVP</a>
+                      </li>
+                      <li>
+                        <a href='gift-registry.html'>Gift registry</a>
+                      </li>
+                      <li>
+                        <a href='gallery.html'>Gallery</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='menu-item-has-children'>
+                    <a href='#'>Wedding Planner</a>
+                    <ul className='sub-menu'>
+                      <li>
+                        <a href='about.html'>About us</a>
+                      </li>
+                      <li>
+                        <a href='contact.html'>Contact</a>
+                      </li>
+                      <li>
+                        <a href='shop.html'>Bridal shop</a>
+                      </li>
+                      <li>
+                        <a href='shop-single.html'>Shop single</a>
+                      </li>
+                      <li>
+                        <a href='services.html'>Services</a>
+                      </li>
+                      <li>
+                        <a href='Portfolio.html'>Portfolio grid</a>
+                      </li>
+                      <li>
+                        <a href='Portfolio-filter.html'>Portfolio Filter</a>
+                      </li>
+                      <li>
+                        <a href='Portfolio-2-col.html'>Portfolio 2 col</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='menu-item-has-children'>
+                    <a href='#'>Blog</a>
+                    <ul className='sub-menu'>
+                      <li>
+                        <a href='blog.html'>Blog</a>
+                      </li>
+                      <li>
+                        <a href='blog-left-sidebar.html'>Blog left sidebar</a>
+                      </li>
+                      <li>
+                        <a href='blog-fullwidth.html'>Blog full width</a>
+                      </li>
+                      <li className='menu-item-has-children'>
+                        <a href='#Level3'>Blog details</a>
+                        <ul className='sub-menu'>
+                          <li>
+                            <a href='blog-details.html'>Blog details</a>
+                          </li>
+                          <li>
+                            <a href='blog-details-left-sidebar.html'>Blog details left sidebar</a>
+                          </li>
+                          <li>
+                            <a href='blog-details-fullwidth.html'>Blog details full width</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='menu-item-has-children'>
+                    <a href='#'>Pages</a>
+                    <ul className='sub-menu'>
+                      <li>
+                        <a href='404.html'>404</a>
+                      </li>
+                      <li>
+                        <a href='faq.html'>FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='contact.html'>Contact</a>
+                  </li>
+                </ul>
+              </div>
+              {/* <!-- end of nav-collapse --> */}
             </div>
-            <div className='col-md-4 offset-md-2 text-center animate-box' data-animate-effect='fadeInLeft'>
-              <div className='item mb-30'>
-                <div className='img'>
-                  {' '}
-                  <img src='/images/bride.png' alt='' />{' '}
+            {/* <!-- end of container --> */}
+          </nav>
+        </header>
+        {/* <!-- end of header --> */}
+
+        {/* <!-- start of hero --> */}
+        <section className='hero-slider hero-style-1'>
+          <div className='swiper-container'>
+            <div className='slide-main-text'>
+              <div className='container'>
+                <div className='slide-title'>
+                  <h2>Dorian & Blit</h2>
                 </div>
-                <div className='info valign'>
-                  <div className='full-width'>
-                    <h6>Mary Brown</h6> <span>The Bride</span>
-                    <p>
-                      Mary fringilla dui at elit finibus viverra nec alan seda couple the miss druane sema the wedding
-                      intono miss sollicitudin non the fermen.
-                    </p>
-                    <div className='social'>
-                      <div className='full-width'>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-facebook'></i>{' '}
-                        </a>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-twitter'></i>{' '}
-                        </a>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-instagram'></i>{' '}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                <div className='wedding-date'>
+                  <span>14 Feb 2020</span>
+                </div>
+                <div className='clearfix'></div>
+                <div className='count-down-clock'>
+                  <div id='clock'></div>
                 </div>
               </div>
-            </div>
-            <div className='col-md-4 text-center animate-box' data-animate-effect='fadeInRight'>
-              <div className='item mb-30'>
-                <div className='img'>
-                  {' '}
-                  <img src='images/groom.png' alt='' />{' '}
-                </div>
-                <div className='info valign'>
-                  <div className='full-width'>
-                    <h6>Brian Martin</h6> <span>The Groom</span>
-                    <p>
-                      Mary fringilla dui at elit finibus viverra nec alan seda couple the miss druane sema the wedding
-                      intono miss sollicitudin non the fermen.
-                    </p>
-                    <div className='social'>
-                      <div className='full-width'>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-facebook'></i>{' '}
-                        </a>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-twitter'></i>{' '}
-                        </a>
-                        <a href='#0' className='icon'>
-                          {' '}
-                          <i className='ti-instagram'></i>{' '}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className='pattern'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Countdown section --> */}
-      <div
-        id='countdown'
-        className='section-padding bg-img bg-fixed'
-        data-overlay-dark='1'
-        data-background='images/banner/1.jpg'
-      >
-        <div className='container'>
-          <div className='row'>
-            <div className='section-head col-md-12'>
-              <h6>We will become a family in</h6>
-              <h2>We're getting married in</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-12'>
-              <ul>
-                <li>
-                  <span id='days'></span>Days
-                </li>
-                <li>
-                  <span id='hours'></span>Hours
-                </li>
-                <li>
-                  <span id='minutes'></span>Minutes
-                </li>
-                <li>
-                  <span id='seconds'></span>Seconds
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Story section --> */}
-      <div id='story' className='story section-padding' data-scroll-index='2'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center animate-box' data-animate-effect='fadeInUp'>
-              <h6 className='section-subtitle'>Mary & Brian</h6>
-              <h2 className='section-title'>Our Love Story</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-12 animate-box' data-animate-effect='fadeInUp'>
-              <div className='owl-carousel owl-theme'>
-                <div className='story left'>
-                  <figure>
-                    <img src='images/story/4.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>July 20, 2015</h6>
-                    <h4>First time we meet</h4>
-                    <p>
-                      First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta
-                      nonsaiere viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='story left'>
-                  <figure>
-                    <img src='images/story/2.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>May 20, 2016</h6>
-                    <h4>We fall in love each other</h4>
-                    <p>
-                      First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta
-                      nonsaiere viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='story left'>
-                  <figure>
-                    <img src='images/story/1.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>June 20, 2020</h6>
-                    <h4>Marriage proposal</h4>
-                    <p>
-                      First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta
-                      nonsaiere viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='story left'>
-                  <figure>
-                    <img src='images/story/3.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>December 24, 2022</h6>
-                    <h4>The wedding day</h4>
-                    <p>
-                      First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta
-                      nonsaiere viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
+            <div className='swiper-wrapper'>
+              <div className='swiper-slide'>
+                <div className='slide-inner slide-bg-image' data-background='/images/slider/slide-1.jpg'></div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Friends section --> */}
-      <div id='friends' className='friends section-padding bg-cream' data-scroll-index='3'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center'>
-              <h6 className='section-subtitle'>Best friends</h6>
-              <h2 className='section-title'>Thanks for being there</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-12 bridesmaid'>
-              <div className='owl-carousel owl-theme'>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/b1.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Eleanor Chris</h6>
-                      <span>Bridesmaid</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/b2.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Vanessa Brown</h6>
-                      <span>Bridesmaid</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/b3.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Fredia Halle</h6>
-                      <span>Bridesmaid</span>
-                    </div>
-                  </div>
-                </div>
+
+              <div className='swiper-slide'>
+                <div className='slide-inner slide-bg-image' data-background='/images/slider/slide-2.jpg'></div>
               </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-12 groomsmen'>
-              <div className='owl-carousel owl-theme'>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/w1.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Stefano Smiht</h6>
-                      <span>Groomsmen</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/w3.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Matthew Brown</h6>
-                      <span>Groomsmen</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='item'>
-                  <div className='img'>
-                    {' '}
-                    <img src='images/friends/w2.jpg' alt='' />{' '}
-                  </div>
-                  <div className='info valign'>
-                    <div className='full-width'>
-                      <h6>Pablo Dante</h6>
-                      <span>Groomsmen</span>
-                    </div>
-                  </div>
-                </div>
+
+              <div className='swiper-slide'>
+                <div className='slide-inner slide-bg-image' data-background='/images/slider/slide-3.jpg'></div>
               </div>
+              {/* <!-- end swiper-slide --> */}
             </div>
+            {/* <!-- end swiper-wrapper --> */}
+
+            {/* <!-- swipper controls --> */}
+            <div className='swiper-pagination'></div>
+            <div className='swiper-button-next'></div>
+            <div className='swiper-button-prev'></div>
           </div>
-        </div>
-      </div>
-      {/* <!-- Video section --> */}
-      <div
-        id='video'
-        className='story-video section-padding bg-img bg-fixed'
-        data-overlay-dark='2'
-        data-background='images/banner/3.jpg'
-      >
-        <div className='container'>
-          <div className='video-wrapper'>
+        </section>
+        {/* <!-- end of hero slider --> */}
+
+        {/* <!-- start invitation-section --> */}
+        <section className='invitation-section section-padding'>
+          <div className='container'>
             <div className='row'>
-              <div className='col-md-12 text-center'>
-                <div className='caption'>
-                  <h6 className='subtitle'>A love story begining</h6>
-                  <h2 className='title'>Watch our love story</h2>
-                  <br />
+              <div className='col col-xs-12'>
+                <div className='invitation-box'>
+                  <div className='left-vec'></div>
+                  <div className='right-vec'></div>
+                  <div className='inner'>
+                    <h2>Save the Date</h2>
+                    <span>For the wedding of</span>
+                    <h3>Dorian & Blit</h3>
+                    <p>Friday February 2020 At 6 O clock PM ,Hotle Seraton, Gulistan Bonani 9500, Dhaka Bangladesh</p>
+                    <a href='#rsvp' className='theme-btn' id='scroll'>
+                      RSVP now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end invitation-section --> */}
+
+        {/* <!-- start couple-section --> */}
+        <section className='couple-section section-padding p-t-0'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                <div className='section-title'>
+                  <h2>Happy Couple</h2>
+                  <p>
+                    Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+                    fitted out with a fur hat
+                  </p>
                 </div>
               </div>
             </div>
             <div className='row'>
-              <div className='col-md-12 mb-60 img text-center'>
-                <a className='vid valign' href='https://youtu.be/bkMjpEixNrg?t=8'>
-                  <div className='vid-butn'>
-                    <span className='icon'>
+              <div className='col col-lg-10 col-lg-offset-1'>
+                <div className='couple-area'>
+                  <div className='couple-row clearfix'>
+                    <div className='img-holder'>
+                      <img src='/images/couple/img-1.jpg' alt='' />
+                    </div>
+                    <div className='details'>
+                      <div className='inner'>
+                        <h2>Dorina Wiliam</h2>
+                        <h4>Hi Dear, I am Dorian Wiliam.</h4>
+                        <p>
+                          A collection of textile samples lay spread out on the table Samsa was a travelling salesman
+                          and above it there hung a picture that he had recently cut out of an illustrated magazine And
+                          housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat
+                          upright
+                        </p>
+                        <ul className='social-links'>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-facebook'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-twitter-alt'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-linkedin'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-pinterest'></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='couple-row last-row clearfix'>
+                    <div className='details'>
+                      <div className='inner'>
+                        <h2>Blit Jhon</h2>
+                        <h4>Hi Dear, I am Blit Jhon.</h4>
+                        <p>
+                          A collection of textile samples lay spread out on the table Samsa was a travelling salesman
+                          and above it there hung a picture that he had recently cut out of an illustrated magazine And
+                          housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat
+                          upright
+                        </p>
+                        <ul className='social-links'>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-facebook'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-twitter-alt'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-linkedin'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <i className='ti-pinterest'></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className='img-holder'>
+                      <img src='/images/couple/img-2.jpg' alt='' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end couple-section --> */}
+
+        {/* <!-- start story-section --> */}
+        <section className='story-section section-padding p-t-0'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                <div className='section-title'>
+                  <h2>Our story</h2>
+                  <p>
+                    Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+                    fitted out with a fur hat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col col-lg-10 col-lg-offset-1'>
+                <div className='story-block'>
+                  <ul>
+                    <li>
+                      <div className='details'>
+                        <h3>First meet</h3>
+                        <span className='date'>25 Dec 2018</span>
+                        <p>
+                          Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                          sapien ut libero venenatis faucibus. Nullam quis ante.
+                        </p>
+                      </div>
+                      <div className='img-holder'>
+                        <img src='/images/story/img-1.png' alt='' />
+                      </div>
+                    </li>
+                    <li>
+                      <div className='img-holder'>
+                        <img src='/images/story/img-2.png' alt='' />
+                      </div>
+                      <div className='details'>
+                        <h3>First date</h3>
+                        <span className='date'>25 Dec 2018</span>
+                        <p>
+                          Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                          sapien ut libero venenatis faucibus. Nullam quis ante.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='details'>
+                        <h3>Proposal</h3>
+                        <span className='date'>25 Dec 2018</span>
+                        <p>
+                          Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                          sapien ut libero venenatis faucibus. Nullam quis ante.
+                        </p>
+                      </div>
+                      <div className='img-holder'>
+                        <img src='/images/story/img-3.png' alt='' />
+                      </div>
+                    </li>
+                    <li>
+                      <div className='img-holder'>
+                        <img src='/images/story/img-4.png' alt='' />
+                      </div>
+                      <div className='details'>
+                        <h3>Engagement</h3>
+                        <span className='date'>25 Dec 2018</span>
+                        <p>
+                          Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                          sapien ut libero venenatis faucibus. Nullam quis ante.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end story-section --> */}
+
+        {/* <!-- start gallery-section --> */}
+        <section className='gallery-section section-padding p-t-0'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                <div className='section-title'>
+                  <h2>Captured Moments</h2>
+                  <p>
+                    Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+                    fitted out with a fur hat
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className='row'>
+              <div className='col col-xs-12'>
+                <div className='gallery-container gallery-fancybox masonry-gallery'>
+                  <div className='grid grid-item'>
+                    <a href='/images/gallery/img-1.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-1.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item'>
+                    <a href='/images/gallery/img-2.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-2.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item'>
+                    <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item'>
+                    <a href='/images/gallery/img-4.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-4.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item width2'>
+                    <a href='/images/gallery/img-5.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-5.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item width2'>
+                    <a href='/images/gallery/img-7.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                      <img src='/images/gallery/img-7.jpg' className='img img-responsive' alt='' />
+                    </a>
+                  </div>
+                  <div className='grid grid-item width2'>
+                    <a
+                      href='https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1'
+                      data-type='iframe'
+                      className='video-play-btn'
+                    >
+                      <img src='/images/gallery/img-6.jpg' className='img img-responsive' alt='' />
                       <i className='ti-control-play'></i>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Events section --> */}
-      <div id='events' className='events section-padding' data-scroll-index='4'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center animate-box' data-animate-effect='fadeInUp'>
-              <h6 className='section-subtitle'>Organization</h6>
-              <h2 className='section-title'>Wedding Events</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-12 animate-box' data-animate-effect='fadeInUp'>
-              <div className='owl-carousel owl-theme'>
-                <div className='events'>
-                  <figure>
-                    <img src='images/event/1.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>
-                      <sup>1</sup>/<sub style={{ marginRight: '5px' }}>4</sub> Information
-                    </h6>
-                    <h4>Wedding Ceremony</h4>
-                    <p>
-                      Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere
-                      viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='events'>
-                  <figure>
-                    <img src='images/event/2.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>
-                      <sup>2</sup>/<sub style={{ marginRight: '10px' }}>4</sub> Information
-                    </h6>
-                    <h4>Lunch Time</h4>
-                    <p>
-                      Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere
-                      viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='events'>
-                  <figure>
-                    <img src='images/event/3.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>
-                      <sup>3</sup>/<sub style={{ marginRight: '10px' }}>4</sub> Information
-                    </h6>
-                    <h4>Wedding Party</h4>
-                    <p>
-                      Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere
-                      viventa miss the fermen.
-                    </p>
-                  </div>
-                </div>
-                <div className='events'>
-                  <figure>
-                    <img src='images/event/4.jpg' alt='' className='img-fluid' />
-                  </figure>
-                  <div className='caption'>
-                    <h6>
-                      <sup>4</sup>/<sub style={{ marginRight: '10px' }}>4</sub> Information
-                    </h6>
-                    <h4>Cake Cutting</h4>
-                    <p>
-                      Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines
-                      finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere
-                      viventa miss the fermen.
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+            {/* <!-- end row --> */}
           </div>
-        </div>
-      </div>
-      {/* <!-- Gallery section --> */}
-      <div id='gallery' className='section-padding bg-cream' data-scroll-index='5'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center'>
-              <h6 className='section-subtitle'>Our Gallery</h6>
-              <h2 className='section-title'>Our Memories</h2>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end gallery-section --> */}
+
+        {/* <!-- start contact-section --> */}
+        <section className='contact-section section-padding p-t-0' id='rsvp'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                <div className='section-title'>
+                  <h2>Are you attending?</h2>
+                  <p>
+                    Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+                    fitted out with a fur hat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col col-lg-10 col-lg-offset-1'>
+                <div className='contact-form'>
+                  <form id='rsvp-form' className='form validate-rsvp-form row' method='post'>
+                    <div className='col col-sm-6'>
+                      <input type='text' name='name' className='form-control' placeholder='Your Name*' />
+                    </div>
+                    <div className='col col-sm-6'>
+                      <input type='email' name='email' className='form-control' placeholder='Your Email*' />
+                    </div>
+                    <div className='col col-sm-6'>
+                      <select className='form-control' name='guest'>
+                        <option disabled value={1}>
+                          Number Of Guest*
+                        </option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                    <div className='col col-sm-6'>
+                      <select className='form-control' name='events'>
+                        <option disabled value={'Al events'}>
+                          I Am Attending*
+                        </option>
+                        <option>Al events</option>
+                        <option>Wedding ceremony</option>
+                        <option>Reception party</option>
+                      </select>
+                    </div>
+                    <div className='col col-sm-12'>
+                      <textarea className='form-control' name='notes' placeholder='Your Message*'></textarea>
+                    </div>
+                    <div className='col col-sm-12 submit-btn'>
+                      <button type='submit' className='theme-btn'>
+                        Send Invitation
+                      </button>
+                      <div id='loader'>
+                        <i className='ti-reload'></i>
+                      </div>
+                    </div>
+                    <div className='col col-md-12 success-error-message'>
+                      <div id='success'>Thank you</div>
+                      <div id='error'> Error occurred while sending email. Please try again later. </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='row'>
-            <ul className='col-md-12 text-center list-unstyled list-inline gallery-menu' id='gallery-filter'>
-              <li className='list-inline-item'>
-                <a className='active' data-filter='*'>
-                  All
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end contact-section --> */}
+
+        {/* <!-- start event-section --> */}
+        <section className='event-section section-padding p-t-0'>
+          <div className='top-area'>
+            <h2>Celebrate Our Love</h2>
+            <p className='date'>14 Feb 2020</p>
+          </div>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-xs-12'>
+                <div className='event-grids clearfix'>
+                  <div className='grid'>
+                    <h3>The Reception</h3>
+                    <p>13 February, 2020 at 9AM - 11 AM Hotel seraton, Gusal Dhank, Bangladesh</p>
+                    <p className='phone'>Ph: 0123456634654</p>
+                    <a
+                      href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.672778464467!2d89.55846281543346!3d22.814585729793365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901c9481c799%3A0x92f932dd6112f8ff!2sHotel+Sheraton+Buliding%2C+29+Khan+Jahan+Ali+Rd%2C+Khulna!5e0!3m2!1sen!2sbd!4v1558933503904!5m2!1sen!2sbd'
+                      className='location popup-gmaps'
+                    >
+                      See location
+                    </a>
+                  </div>
+                  <div className='grid'>
+                    <h3>The Reception</h3>
+                    <p>13 February, 2020 at 9AM - 11 AM Hotel seraton, Gusal Dhank, Bangladesh</p>
+                    <p className='phone'>Ph: 0123456634654</p>
+                    <a
+                      href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.672778464467!2d89.55846281543346!3d22.814585729793365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901c9481c799%3A0x92f932dd6112f8ff!2sHotel+Sheraton+Buliding%2C+29+Khan+Jahan+Ali+Rd%2C+Khulna!5e0!3m2!1sen!2sbd!4v1558933503904!5m2!1sen!2sbd'
+                      className='location popup-gmaps'
+                    >
+                      See location
+                    </a>
+                  </div>
+                  <div className='grid'>
+                    <h3>The Reception</h3>
+                    <p>13 February, 2020 at 9AM - 11 AM Hotel seraton, Gusal Dhank, Bangladesh</p>
+                    <p className='phone'>Ph: 0123456634654</p>
+                    <a
+                      href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.672778464467!2d89.55846281543346!3d22.814585729793365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901c9481c799%3A0x92f932dd6112f8ff!2sHotel+Sheraton+Buliding%2C+29+Khan+Jahan+Ali+Rd%2C+Khulna!5e0!3m2!1sen!2sbd!4v1558933503904!5m2!1sen!2sbd'
+                      className='location popup-gmaps'
+                    >
+                      See location
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end event-section --> */}
+
+        {/* <!-- start partners-section --> */}
+        <section className='partners-section section-padding p-t-0'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-xs-12'>
+                <h2>Gift Registry</h2>
+                <div className='partner-grids clearfix'>
+                  <div className='grid'>
+                    <img src='/images/partners/img-1.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-2.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-3.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-4.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-5.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-6.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-7.jpg' alt='' />
+                  </div>
+                  <div className='grid'>
+                    <img src='/images/partners/img-8.jpg' alt='' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end partners-section --> */}
+
+        {/* <!-- start blog-section --> */}
+        <section className='blog-section section-padding'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                <div className='section-title'>
+                  <h2>Latest form the blog</h2>
+                  <p>
+                    Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+                    fitted out with a fur hat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col col-xs-12'>
+                <div className='blog-grids clearfix'>
+                  <div className='grid'>
+                    <div className='entry-media'>
+                      <img src='/images/blog/img-1.jpg' alt='' />
+                    </div>
+                    <div className='details'>
+                      <h3>
+                        <a href='#'>Hundreds of designs for every wedding style</a>
+                      </h3>
+                      <p className='date'>
+                        <i className='ti-timer'></i> April 14, 2019
+                      </p>
+                    </div>
+                  </div>
+                  <div className='grid'>
+                    <div className='entry-media'>
+                      <img src='/images/blog/img-2.jpg' alt='' />
+                    </div>
+                    <div className='details'>
+                      <h3>
+                        <a href='#'>How to plan a perfect wedding in moments</a>
+                      </h3>
+                      <p className='date'>
+                        <i className='ti-timer'></i> April 14, 2019
+                      </p>
+                    </div>
+                  </div>
+                  <div className='grid'>
+                    <div className='entry-media'>
+                      <img src='/images/blog/img-3.jpg' alt='' />
+                    </div>
+                    <div className='details'>
+                      <h3>
+                        <a href='#'>Possible no matter where you are on your journey</a>
+                      </h3>
+                      <p className='date'>
+                        <i className='ti-timer'></i> April 14, 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end container --> */}
+        </section>
+        {/* <!-- end blog-section --> */}
+
+        {/* <!-- start site-footer --> */}
+        <footer className='site-footer footer-style-1'>
+          <div className='inner'>
+            <div className='couple-pic'>
+              <img src='/images/footer-couple-pic.jpg' alt='' />
+            </div>
+            <h2>Thank you</h2>
+            <ul className='social-links'>
+              <li>
+                <a href='#'>
+                  <i className='ti-facebook'></i>
                 </a>
               </li>
-              <li className='list-inline-item'>
-                <a className='' data-filter='.ceremony'>
-                  Ceremony
+              <li>
+                <a href='#'>
+                  <i className='ti-twitter-alt'></i>
                 </a>
               </li>
-              <li className='list-inline-item'>
-                <a className='' data-filter='.party'>
-                  Party
+              <li>
+                <a href='#'>
+                  <i className='ti-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i className='ti-pinterest'></i>
                 </a>
               </li>
             </ul>
+            <p>
+              Copyright 2019, Made with love by <a href='http://themeforest.net/user/blue_design'>blue design</a>
+            </p>
           </div>
-          <div className='row gallery-filter'>
-            <div className='col-md-4 gallery-item ceremony'>
-              <a href='images/gallery/1.jpg' className='img-zoom'>
-                <div className='gallery-box'>
-                  <div className='gallery-img'>
-                    {' '}
-                    <img src='images/gallery/1.jpg' className='img-fluid mx-auto d-block' alt='' />{' '}
-                  </div>
-                  <div className='gallery-detail'>
-                    <h4 className='mb-0'>Wedding Ceremony</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='col-md-4 gallery-item party'>
-              <a href='images/gallery/2.jpg' className='img-zoom'>
-                <div className='gallery-box'>
-                  <div className='gallery-img'>
-                    {' '}
-                    <img src={'/images/gallery/2.jpg'} className='img-fluid mx-auto d-block' alt='' />{' '}
-                  </div>
-                  <div className='gallery-detail'>
-                    <h4 className='mb-0'>Wedding Party</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='col-md-4 gallery-item ceremony'>
-              <a href='images/gallery/3.jpg' className='img-zoom'>
-                <div className='gallery-box'>
-                  <div className='gallery-img'>
-                    {' '}
-                    <img src='images/gallery/3.jpg' className='img-fluid mx-auto d-block' alt='' />{' '}
-                  </div>
-                  <div className='gallery-detail'>
-                    <h4 className='mb-0'>Wedding Ceremony</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='col-md-4 gallery-item party'>
-              <a href='images/gallery/4.jpg' className='img-zoom'>
-                <div className='gallery-box'>
-                  <div className='gallery-img'>
-                    {' '}
-                    <img src='images/gallery/4.jpg' className='img-fluid mx-auto d-block' alt='' />{' '}
-                  </div>
-                  <div className='gallery-detail'>
-                    <h4 className='mb-0'>Wedding Party</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='col-md-4 gallery-item ceremony'>
-              <a href='images/gallery/5.jpg' className='img-zoom'>
-                <div className='gallery-box'>
-                  <div className='gallery-img'>
-                    {' '}
-                    <img src='images/gallery/5.jpg' className='img-fluid mx-auto d-block' alt='' />{' '}
-                  </div>
-                  <div className='gallery-detail'>
-                    <h4 className='mb-0'>Wedding Ceremony</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+        </footer>
+        {/* <!-- end site-footer --> */}
       </div>
-      {/* <!-- Banner section --> */}
-      <div
-        id='banner'
-        className='section-padding bg-img bg-fixed'
-        data-overlay-dark='1'
-        data-background='images/banner/1.jpg'
-      >
-        <div className='container'>
-          <div className='row'>
-            <div className='section-head col-md-12'>
-              <h6>Save the date</h6>
-              <h2>Looking forward to see you!</h2>
-              <h1>24.11.2022</h1>
-              <h1>
-                <i className='ti-heart'></i>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- When & Where section --> */}
-      <div id='whenwhere' className='when-where section-padding' data-scroll-index='6'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center animate-box' data-animate-effect='fadeInUp'>
-              <h6 className='section-subtitle'>Save the date</h6>
-              <h2 className='section-title'>When & Where</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-6 animate-box' data-animate-effect='fadeInLeft'>
-              <div className='img left'>
-                <img src='images/whenwhere/01.jpg' alt='' />
-              </div>
-            </div>
-            <div className='col-md-6 valign animate-box' data-animate-effect='fadeInRight'>
-              <div className='content'>
-                <div className='date'>
-                  <h3>24</h3>
-                  <h6>Dec 2022</h6>
-                </div>
-                <div className='cont'>
-                  <div className='info'>
-                    <h6>Are you ready?</h6>
-                  </div>
-                  <h4>Wedding Ceremony</h4>
-                  <ul className='list-unstyled cont-list'>
-                    <li>
-                      <div className='icon'>
-                        {' '}
-                        <span className='ti-location-pin'></span>{' '}
-                      </div>
-                      <div className='text'>
-                        <p>
-                          175 Broadway, Brooklyn NY
-                          <br />
-                          New York 11244, USA
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className='icon'>
-                        {' '}
-                        <span className='ti-time'></span>{' '}
-                      </div>
-                      <div className='text'>
-                        <p>12:00am – 13:00pm</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-6 order2 valign animate-box' data-animate-effect='fadeInLeft'>
-              <div className='content'>
-                <div className='date'>
-                  <h3>24</h3>
-                  <h6>Dec 2022</h6>
-                </div>
-                <div className='cont'>
-                  <div className='info'>
-                    <h6>Are you ready?</h6>
-                  </div>
-                  <h4>Wedding Party</h4>
-                  <ul className='list-unstyled cont-list'>
-                    <li>
-                      <div className='icon'>
-                        {' '}
-                        <span className='ti-location-pin'></span>{' '}
-                      </div>
-                      <div className='text'>
-                        <p>
-                          Nusret Restaurant, 149 Broadway
-                          <br />
-                          Brooklyn, New York, USA
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className='icon'>
-                        {' '}
-                        <span className='ti-time'></span>{' '}
-                      </div>
-                      <div className='text'>
-                        <p>14:00pm</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 order1 animate-box' data-animate-effect='fadeInRight'>
-              <div className='img'>
-                <img src='images/whenwhere/02.jpg' alt='' />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- RSVP Form section --> */}
-      <div
-        id='rsvp'
-        className='rsvp section-padding bg-img bg-fixed'
-        data-background='images/banner/2.jpg'
-        data-scroll-index='7'
-      >
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-6 offset-md-3 bg-white p-60'>
-              <h2 className='text-center'>R.S.V.P</h2>
-              <h6 className='text-center'>Will you attend?</h6>
-              <form className='contact__form' method='post' action='mail.php'>
-                {/* <!-- form message --> */}
-                <div className='row'>
-                  <div className='col-12'>
-                    <div className='alert alert-success contact__msg' style={{ display: 'none' }} role='alert'>
-                      Your message was sent successfully.
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- form element --> */}
-                <div className='row'>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <input name='name' type='text' className='form-control' placeholder='Name' required />{' '}
-                    </div>
-                  </div>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <input name='email' type='email' className='form-control' placeholder='Email' required />{' '}
-                    </div>
-                  </div>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <input name='guests' type='text' className='form-control' placeholder='Guests' required />{' '}
-                    </div>
-                  </div>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <textarea
-                        name='message'
-                        id='message'
-                        cols={30}
-                        rows={7}
-                        className='form-control'
-                        placeholder='Message'
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <input name='submit' type='submit' className='btn' value='SEND' />{' '}
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Gift Registry section --> */}
-      <div id='gift' className='gift-registry'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12 text-center'>
-              <h6 className='section-subtitle'>Gift Registry</h6>
-              <h2 className='section-title'>The Registry</h2>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-md-10 offset-md-1'>
-              <div className='owl-carousel owl-theme'>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/1.jpg' alt='' />
-                  </a>
-                </div>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/2.jpg' alt='' />
-                  </a>
-                </div>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/3.jpg' alt='' />
-                  </a>
-                </div>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/4.jpg' alt='' />
-                  </a>
-                </div>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/5.jpg' alt='' />
-                  </a>
-                </div>
-                <div className='gift-registry-logo'>
-                  <a href='#0'>
-                    <img src='images/gift/6.jpg' alt='' />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Instagram section --> */}
-      <div className='insta'>
-        <div className='container flex'>
-          <div className='img'>
-            <a href='#0'>
-              {' '}
-              <img src='images/insta/1.jpg' alt='' />{' '}
-            </a>{' '}
-            <i className='ti-instagram'></i>
-          </div>
-          <div className='img'>
-            <a href='#0'>
-              {' '}
-              <img src='images/insta/2.jpg' alt='' />{' '}
-            </a>{' '}
-            <i className='ti-instagram'></i>
-          </div>
-          <div className='img'>
-            <a href='#0'>
-              {' '}
-              <img src='images/insta/3.jpg' alt='' />{' '}
-            </a>{' '}
-            <i className='ti-instagram'></i>
-          </div>
-          <div className='img'>
-            <a href='#0'>
-              {' '}
-              <img src='images/insta/4.jpg' alt='' />{' '}
-            </a>{' '}
-            <i className='ti-instagram'></i>
-          </div>
-          <div className='img'>
-            <a href='#0'>
-              {' '}
-              <img src='images/insta/5.jpg' alt='' />{' '}
-            </a>{' '}
-            <i className='ti-instagram'></i>
-          </div>
-          <div className='follow'>
-            <a href='#0' className='text-bg'>
-              {' '}
-              <span>
-                <i className='ti-instagram'></i> / MaryBrian
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Footer section --> */}
-      <footer id='footer'>
-        <div className='container'>
-          <div className='top-footer'>
-            <div className='row'>
-              <div className='col-md-12 text-center'>
-                <div className='section-padding'>
-                  <h2>
-                    <span>
-                      Mary <small>&amp;</small> Brian
-                    </span>
-                  </h2>
-                  <h6>24 December 2022, NEW YORK</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='sub-footer'>
-            <div className='row'>
-              <div className='col-md-12 text-center'>
-                <p>Make with love. All right reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* <!-- end of page-wrapper --> */}
     </div>
   );
 }
