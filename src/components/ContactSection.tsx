@@ -5,7 +5,7 @@ export function ContactSection() {
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
             <div className='section-title'>
-              <h2>Are you attending?</h2>
+              <h2>ВЫ ПРИЕЗЖАЕТЕ НА СВАДЬБУ?</h2>
               <p>
                 Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
                 out with a fur hat
