@@ -110,7 +110,11 @@ function App() {
         <div className='mary-hero js-fullheight'>
           <div className='flexslider js-fullheight'>
             <ul className='slides'>
-              <li className='bg-fixed' style={{ backgroundImage: `url(/images/slider/1.jpg)` }} data-overlay-dark='2'>
+              <li
+                className='bg-fixed'
+                style={{ backgroundImage: `url(/images/slider/1.jpg)`, height: '20' }}
+                data-overlay-dark='2'
+              >
                 <div className='overlay'></div>
                 <div className='container'>
                   <div className='row'>
