@@ -53,16 +53,16 @@ export function HeroSlider(props: HeroSliderProps) {
             <div className='count-down-clock'>
               <div id='clock'>
                 <div className='box'>
-                  <div>{days}</div> <span>Days</span>{' '}
+                  <div>{days}</div> <span>дней</span>{' '}
                 </div>
                 <div className='box'>
-                  <div>{hours}</div> <span>Hours</span>{' '}
+                  <div>{hours}</div> <span>часов</span>{' '}
                 </div>
                 <div className='box'>
-                  <div>{minutes}</div> <span>Mins</span>{' '}
+                  <div>{minutes}</div> <span>минут</span>{' '}
                 </div>
                 <div className='box'>
-                  <div>{seconds}</div> <span>Secs</span>{' '}
+                  <div>{seconds}</div> <span>секунд</span>{' '}
                 </div>
               </div>
             </div>
