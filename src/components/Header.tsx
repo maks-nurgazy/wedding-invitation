@@ -7,7 +7,7 @@ export function Header() {
             <div className='col col-xs-12'>
               <div className='site-logo'>
                 <a href='index.html'>
-                  <h1>Dorian & Blit</h1>
+                  <h1>Argen & Zhanara</h1>
                   <span>Just Married</span>
                 </a>
               </div>

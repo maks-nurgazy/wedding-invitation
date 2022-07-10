@@ -8,6 +8,7 @@ import { Header } from './components/Header';
 import { HeroSlider } from './components/HeroSlider';
 import { InvitationSection } from './components/InvitationSection';
 import { PartnersSection } from './components/PartnersSection';
+import { Preloader } from './components/Preloader';
 import { StorySection } from './components/StorySection';
 
 function App() {
@@ -16,14 +17,7 @@ function App() {
       {/* <!-- start page-wrapper --> */}
       <div className='page-wrapper flower-fixed-body'>
         {/* <!-- start preloader --> */}
-        <div className='preloader'>
-          <div className='middle'>
-            <i className='fi flaticon-favorite-heart-button'></i>
-            <i className='fi flaticon-favorite-heart-button'></i>
-            <i className='fi flaticon-favorite-heart-button'></i>
-            <i className='fi flaticon-favorite-heart-button'></i>
-          </div>
-        </div>
+        <Preloader />
         {/* <!-- end preloader --> */}
 
         {/* <!-- Start header --> */}
