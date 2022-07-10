@@ -47,7 +47,7 @@ export function HeroSlider(props: HeroSliderProps) {
               <h2>Argen & Zhanara</h2>
             </div>
             <div className='wedding-date'>
-              <span>24 Aug 2022</span>
+              <span>24 Август 2022</span>
             </div>
             <div className='clearfix'></div>
             <div className='count-down-clock'>
