@@ -19,7 +19,7 @@ export function StorySection() {
               <ul>
                 <li>
                   <div className='details'>
-                    <h3>First meet</h3>
+                    <h3>Первая встреча</h3>
                     <span className='date'>25 Dec 2018</span>
                     <p>
                       Однажды осенью, увидев свои зубы, я подумал, пора бы навестить стоматолога. Знакомая дала номер
@@ -35,15 +35,15 @@ export function StorySection() {
                     <img src='/images/story/img-2.png' alt='' />
                   </div>
                   <div className='details'>
-                    <h3>First date</h3>
-                    <span className='date'>25 Dec 2018</span>
+                    <h3>Первое свидание</h3>
+                    <span className='date'>25 Декабрь 2020</span>
                     <p>Увидев меня она сразу же потеряла голову от моей красивой внешности и харизмы😊</p>
                   </div>
                 </li>
                 <li>
                   <div className='details'>
-                    <h3>Proposal</h3>
-                    <span className='date'>25 Dec 2018</span>
+                    <h3>Предложение</h3>
+                    <span className='date'>25 Декабрь 2021</span>
                     <p>
                       Те же черты я обнаружил в ней и мы решили дать этому миру и людям, возвожность наслаждаться нашим
                       союзом.
@@ -58,8 +58,8 @@ export function StorySection() {
                     <img src='/images/story/img-4.png' alt='' />
                   </div>
                   <div className='details'>
-                    <h3>Engagement</h3>
-                    <span className='date'>24 August 2022</span>
+                    <h3>Обручение</h3>
+                    <span className='date'>24 Август 2022</span>
                     <p>
                       Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
                       sapien ut libero venenatis faucibus. Nullam quis ante.

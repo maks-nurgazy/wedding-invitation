@@ -35,16 +35,16 @@ export function HeroSlider() {
           <div className='swiper-slide'>
             <div
               className='slide-inner slide-bg-image'
-              data-background='/images/slider/slide-2.jpg'
-              style={{ backgroundImage: 'url(/images/slider/slide-2.jpg)' }}
+              data-background='/images/slider/slide-1.jpg'
+              style={{ backgroundImage: 'url(/images/slider/slide-1.jpg)' }}
             ></div>
           </div>
 
           <div className='swiper-slide'>
             <div
               className='slide-inner slide-bg-image'
-              data-background='/images/slider/slide-3.jpg'
-              style={{ backgroundImage: 'url(/images/slider/slide-3.jpg)' }}
+              data-background='/images/slider/slide-1.jpg'
+              style={{ backgroundImage: 'url(/images/slider/slide-1.jpg)' }}
             ></div>
           </div>
           {/* <!-- end swiper-slide --> */}

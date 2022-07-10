@@ -5,7 +5,7 @@ export function CoupleSection() {
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
             <div className='section-title'>
-              <h2>Happy Couple</h2>
+              <h2>СЧАСТЛИВАЯ ПАРА</h2>
               <p>
                 Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
                 out with a fur hat
@@ -23,7 +23,7 @@ export function CoupleSection() {
                 <div className='details'>
                   <div className='inner'>
                     <h2>Zhanara Maisalbekova</h2>
-                    <h4>Hi Dear, I am Dorian Wiliam.</h4>
+                    <h4>Hi Dear, I am Zhanara Maisalbekova.</h4>
                     <p>
                       A collection of textile samples lay spread out on the table Samsa was a travelling salesman and
                       above it there hung a picture that he had recently cut out of an illustrated magazine And housed
