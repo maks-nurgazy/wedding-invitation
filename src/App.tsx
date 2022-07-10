@@ -1,3 +1,4 @@
+/* Local dependencies */
 import { BlogSection } from './components/BlogSection';
 import { ContactSection } from './components/ContactSection';
 import { CoupleSection } from './components/CoupleSection';
@@ -14,57 +15,20 @@ import { StorySection } from './components/StorySection';
 function App() {
   return (
     <div className='App'>
-      {/* <!-- start page-wrapper --> */}
       <div className='page-wrapper flower-fixed-body'>
-        {/* <!-- start preloader --> */}
         <Preloader />
-        {/* <!-- end preloader --> */}
-
-        {/* <!-- Start header --> */}
         <Header />
-        {/* <!-- end of header --> */}
-
-        {/* <!-- start of hero --> */}
         <HeroSlider />
-        {/* <!-- end of hero slider --> */}
-
-        {/* <!-- start invitation-section --> */}
         <InvitationSection />
-        {/* <!-- end invitation-section --> */}
-
-        {/* <!-- start couple-section --> */}
         <CoupleSection />
-        {/* <!-- end couple-section --> */}
-
-        {/* <!-- start story-section --> */}
         <StorySection />
-        {/* <!-- end story-section --> */}
-
-        {/* <!-- start gallery-section --> */}
         <GallerySection />
-        {/* <!-- end gallery-section --> */}
-
-        {/* <!-- start contact-section --> */}
         <ContactSection />
-        {/* <!-- end contact-section --> */}
-
-        {/* <!-- start event-section --> */}
         <EventSection />
-        {/* <!-- end event-section --> */}
-
-        {/* <!-- start partners-section --> */}
         <PartnersSection />
-        {/* <!-- end partners-section --> */}
-
-        {/* <!-- start blog-section --> */}
         <BlogSection />
-        {/* <!-- end blog-section --> */}
-
-        {/* <!-- start site-footer --> */}
         <Footer />
-        {/* <!-- end site-footer --> */}
       </div>
-      {/* <!-- end of page-wrapper --> */}
     </div>
   );
 }
