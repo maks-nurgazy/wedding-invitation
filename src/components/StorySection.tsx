@@ -5,7 +5,7 @@ export function StorySection() {
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
             <div className='section-title'>
-              <h2>Our story</h2>
+              <h2>История любви</h2>
               <p>
                 Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
                 out with a fur hat
@@ -22,8 +22,8 @@ export function StorySection() {
                     <h3>First meet</h3>
                     <span className='date'>25 Dec 2018</span>
                     <p>
-                      Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-                      sapien ut libero venenatis faucibus. Nullam quis ante.
+                      Однажды осенью, увидев свои зубы, я подумал, пора бы навестить стоматолога. Знакомая дала номер
+                      хорошего врача и им оказалась Жанара.
                     </p>
                   </div>
                   <div className='img-holder'>
@@ -37,10 +37,7 @@ export function StorySection() {
                   <div className='details'>
                     <h3>First date</h3>
                     <span className='date'>25 Dec 2018</span>
-                    <p>
-                      Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-                      sapien ut libero venenatis faucibus. Nullam quis ante.
-                    </p>
+                    <p>Увидев меня она сразу же потеряла голову от моей красивой внешности и харизмы😊</p>
                   </div>
                 </li>
                 <li>
@@ -48,8 +45,8 @@ export function StorySection() {
                     <h3>Proposal</h3>
                     <span className='date'>25 Dec 2018</span>
                     <p>
-                      Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-                      sapien ut libero venenatis faucibus. Nullam quis ante.
+                      Те же черты я обнаружил в ней и мы решили дать этому миру и людям, возвожность наслаждаться нашим
+                      союзом.
                     </p>
                   </div>
                   <div className='img-holder'>
@@ -62,7 +59,7 @@ export function StorySection() {
                   </div>
                   <div className='details'>
                     <h3>Engagement</h3>
-                    <span className='date'>25 Dec 2018</span>
+                    <span className='date'>24 August 2022</span>
                     <p>
                       Luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
                       sapien ut libero venenatis faucibus. Nullam quis ante.
