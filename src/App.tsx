@@ -1,16 +1,14 @@
 /* Local dependencies */
-import { BlogSection } from './components/BlogSection';
-import { ContactSection } from './components/ContactSection';
-import { CoupleSection } from './components/CoupleSection';
-import { EventSection } from './components/EventSection';
-import { Footer } from './components/Footer';
-import { GallerySection } from './components/GallerySection';
-import { Header } from './components/Header';
-import { HeroSlider } from './components/HeroSlider';
-import { InvitationSection } from './components/InvitationSection';
-import { PartnersSection } from './components/PartnersSection';
-import { Preloader } from './components/Preloader';
-import { StorySection } from './components/StorySection';
+
+import { ContactSection } from './components/contact/ContactSection';
+import { Footer } from './components/footer/Footer';
+import { GallerySection } from './components/gallery/GallerySection';
+import { Header } from './components/header/Header';
+import { HeroSlider } from './components/hero-slider/HeroSlider';
+import { InvitationSection } from './components/invitation/InvitationSection';
+import { PlanningSection } from './components/planning/PlanningSection';
+import { Preloader } from './components/preloader/Preloader';
+import { StorySection } from './components/story/StorySection';
 
 function App() {
   return (
@@ -24,8 +22,9 @@ function App() {
         <StorySection />
         <GallerySection />
         <ContactSection />
-        <EventSection />
-        <PartnersSection />
+        <PlanningSection />
+        {/* <EventSection /> */}
+        {/* <PartnersSection /> */}
         <Footer />
       </div>
     </div>
