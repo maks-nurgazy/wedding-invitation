@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+#1.0	contact-section
+--------------------------------------------------------------*/
+.contact-section {
+  position: relative;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 10;
+}
+
+.contact-section .contact-form {
+  background: #fff;
+  padding: 65px 45px;
+  border: 2px solid #edf3f5;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section .contact-form {
+    margin: 0 105px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section .contact-form {
+    padding: 35px 25px;
+  }
+}
+
+.contact-section .contact-form:before {
+  content: '';
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #edf3f5;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+.contact-section .contact-form:after {
+  content: '';
+  background: url('../../../public/images/rsvp-flower.png') center center/cover no-repeat local;
+  width: 982px;
+  height: 405px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -120px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.contact-section .form ::-webkit-input-placeholder {
+  font-style: 14px;
+  font-style: normal;
+  color: #797979;
+}
+
+.contact-section .form :-moz-placeholder {
+  font-style: 14px;
+  font-style: normal;
+  color: #797979;
+}
+
+.contact-section .form ::-moz-placeholder {
+  font-style: 14px;
+  font-style: normal;
+  color: #797979;
+}
+
+.contact-section .form :-ms-input-placeholder {
+  font-style: 14px;
+  font-style: normal;
+  color: #797979;
+}
+
+.contact-section .form .col {
+  margin-bottom: 25px;
+}
+
+.contact-section .form .submit-btn {
+  margin-bottom: 0;
+}
+
+.contact-section .form input,
+.contact-section .form select,
+.contact-section .form textarea {
+  background: #fbfbfb;
+  height: 50px;
+  font-size: 14px;
+  font-size: 0.93333rem;
+  font-weight: 300;
+  border: 0;
+  color: #797979;
+  padding: 6px 15px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #edf3f5;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 991px) {
+  .contact-section .form input,
+  .contact-section .form select,
+  .contact-section .form textarea {
+    height: 45px;
+  }
+}
+
+.contact-section .form select {
+  color: #797979;
+  background: #fbfbfb url('../../../public/images/select-icon.png') no-repeat calc(100% - 15px) center;
+  opacity: 1;
+}
+
+.contact-section .form textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.contact-section .form .submit-btn {
+  text-align: center;
+}
+
+.contact-section .form .success-error-message {
+  margin-bottom: 0;
+}
+
+.contact-map-section .contact-map {
+  height: 550px;
+}
+
+.contact-map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+}

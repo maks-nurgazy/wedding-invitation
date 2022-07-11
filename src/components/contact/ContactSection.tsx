@@ -1,3 +1,5 @@
+import './style.scss';
+
 export function ContactSection() {
   return (
     <section className='contact-section section-padding p-t-0' id='rsvp'>
