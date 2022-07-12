@@ -23,12 +23,6 @@ export function GallerySection() {
                 </a>
               </div>
 
-              <div className='grid grid-item width2'>
-                <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
-                  <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
-                </a>
-              </div>
-
               <div className='grid grid-item'>
                 <a href='/images/gallery/img-2.jpg' className='fancybox' data-fancybox-group='gall-1'>
                   <img src='/images/gallery/img-2.jpg' className='img img-responsive' alt='' />
@@ -41,9 +35,9 @@ export function GallerySection() {
                 </a>
               </div>
 
-              <div className='grid grid-item'>
-                <a href='/images/gallery/img-5.jpg' className='fancybox' data-fancybox-group='gall-1'>
-                  <img src='/images/gallery/img-5.jpg' className='img img-responsive' alt='' />
+              <div className='grid grid-item width2'>
+                <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                  <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
 
@@ -52,6 +46,12 @@ export function GallerySection() {
                   <img src='/images/gallery/img-7.jpg' className='img img-responsive' alt='' />
                 </a>
               </div>
+
+              {/* <div className='grid grid-item width2'>
+                <a href='/images/gallery/img-7.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                  <img src='/images/gallery/img-7.jpg' className='img img-responsive' alt='' />
+                </a>
+              </div> */}
 
               <div className='grid grid-item'>
                 <a
