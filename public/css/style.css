@@ -2526,6 +2526,7 @@ img {
 .count-down-clock {
   max-width: 700px;
   margin: 0 auto;
+  /* margin-top: 120px; */
 }
 
 #clock {
@@ -2534,7 +2535,7 @@ img {
 }
 
 #clock > div {
-  background: rgba(178, 201, 211, 0.9);
+  background: rgba(0,0,0,0.5);
   width: 25%;
   float: left;
   text-align: center;
