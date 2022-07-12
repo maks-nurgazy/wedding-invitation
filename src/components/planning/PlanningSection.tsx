@@ -8,14 +8,14 @@ export function PlanningSection() {
               {/* <!-- Google Map start--> */}
               <div id='atf-map-area'>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23408.01477470039!2d74.55252535!3d42.830574799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec99daedfda3d%3A0x747678a914db5c2e!2sArcha%20Beshik%2C%20Bishkek!5e0!3m2!1sen!2skg!4v1657638867642!5m2!1sen!2skg'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5852.554681478365!2d74.56124362852093!3d42.82475506492365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9544f34b431%3A0xa8162b8be1c69c25!2sToos-Kol!5e0!3m2!1sen!2skg!4v1657641056194!5m2!1sen!2skg'
                   width='600'
                   height='450'
                   style={{ border: 0 }}
-                  allowFullScreen
+                  allowFullScreen={true}
                   loading='lazy'
                   referrerPolicy='no-referrer-when-downgrade'
-                />
+                ></iframe>
               </div>
               {/* <!-- Google Map end --> */}
             </div>
