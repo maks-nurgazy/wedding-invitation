@@ -2,9 +2,9 @@ export function Footer() {
   return (
     <footer className='site-footer footer-style-1'>
       <div className='inner'>
-        <div className='couple-pic'>
+        {/* <div className='couple-pic'>
           <img src='/images/footer-couple-pic.jpg' alt='' />
-        </div>
+        </div> */}
         <h2>Thank you</h2>
         <ul className='social-links'>
           <li>
@@ -29,7 +29,8 @@ export function Footer() {
           </li>
         </ul>
         <p>
-          Copyright 2019, Made with love by <a href='http://themeforest.net/user/blue_design'>blue design</a>
+          Copyright {new Date().getFullYear()}, Made with love by{' '}
+          <a href='https://www.instagram.com/maksnurgazy/'>Maksatbek Bolushov</a>
         </p>
       </div>
     </footer>
