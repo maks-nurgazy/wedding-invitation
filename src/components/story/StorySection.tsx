@@ -1,6 +1,6 @@
 export function StorySection() {
   return (
-    <section className='story-section section-padding p-t-0'>
+    <section id='story-section' className='story-section section-padding p-t-0'>
       <div className='container'>
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>

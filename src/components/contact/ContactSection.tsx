@@ -2,7 +2,7 @@ import './style.scss';
 
 export function ContactSection() {
   return (
-    <section className='contact-section section-padding p-t-0' id='rsvp'>
+    <section id='contact-section' className='contact-section section-padding p-t-0'>
       <div className='container'>
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
