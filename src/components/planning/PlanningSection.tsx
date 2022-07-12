@@ -1,4 +1,5 @@
 import './planning.style.scss';
+import { FaRegLemon, FaCarrot } from 'react-icons/fa';
 
 export function PlanningSection() {
   return (
@@ -29,32 +30,34 @@ export function PlanningSection() {
             data-wow-offset='0'
           >
             <div className='atf-section-title text-left'>
-              <h5>Planning</h5>
-              <h2 className='mb-3'>When & Where</h2>
+              <h5>План</h5>
+              <h2 className='mb-3'>Когда & Где</h2>
             </div>
 
             <div className='row clearfix'>
               <div className='col-6'>
                 <div className='atf-planning-time text-center'>
                   <div className='atf-planning-icon'>
-                    <i className='fas fa-carrot'></i>
+                    <i className='fas fa-carrot'>
+                      <FaCarrot />
+                    </i>
                   </div>
                   <div className='atf-planning-title'>
-                    <h3>The Reception</h3>
+                    <h3>Фуршет</h3>
                     <ul className='atf-planning-ceremony'>
                       <li className='atf-date'>
-                        <a href='#'>Monday, 23 December, 2021</a>
+                        <a href='#'>Пон, 23 Авг, 2022</a>
                       </li>
                       <li className='atf-time'>
-                        <a href='#'>8am-4pm</a>
+                        <a href='#'>9am-4pm</a>
                       </li>
                       <li className='atf-location'>
                         <a href='#'>
-                          Grafton Street Ireland University <br /> US Ambasi
+                          "Мурас" этно-ресторан <br /> Каракол
                         </a>
                       </li>
                       <li className='atf-phone'>
-                        <a href='#'>+458787458</a>
+                        <a href='#'>+996700105000</a>
                       </li>
                     </ul>
                   </div>
@@ -63,24 +66,26 @@ export function PlanningSection() {
               <div className='col-6'>
                 <div className='atf-planning-time text-center'>
                   <div className='atf-planning-icon'>
-                    <i className='far fa-lemon'></i>
+                    <i className='far fa-lemon'>
+                      <FaRegLemon />
+                    </i>
                   </div>
                   <div className='atf-planning-title'>
-                    <h3>The Ceremony</h3>
+                    <h3>Банкет</h3>
                     <ul className='atf-planning-ceremony'>
                       <li className='atf-date'>
-                        <a href='#'>Monday, 23 December, 2021</a>
+                        <a href='#'>Пон, 23 Авг, 2022</a>
                       </li>
                       <li className='atf-time'>
                         <a href='#'>8am-4pm</a>
                       </li>
                       <li className='atf-location'>
                         <a href='#'>
-                          Grafton Street Ireland University <br /> US Ambasi
+                          Marco Polo <br /> Каракол
                         </a>
                       </li>
                       <li className='atf-phone'>
-                        <a href='#'>+458787458</a>
+                        <a href='#'>+996701751595</a>
                       </li>
                     </ul>
                   </div>
