@@ -8,13 +8,14 @@ export function PlanningSection() {
               {/* <!-- Google Map start--> */}
               <div id='atf-map-area'>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467571.67482646654!2d90.12967733281249!3d23.71513239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b93a44bdee63%3A0x7008b7c75ac5b925!2sWedding%20Invitation%20Card%20Factory!5e0!3m2!1sen!2sbd!4v1632059342494!5m2!1sen!2sbd'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23408.01477470039!2d74.55252535!3d42.830574799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec99daedfda3d%3A0x747678a914db5c2e!2sArcha%20Beshik%2C%20Bishkek!5e0!3m2!1sen!2skg!4v1657638867642!5m2!1sen!2skg'
                   width='600'
                   height='450'
                   style={{ border: 0 }}
                   allowFullScreen
                   loading='lazy'
-                ></iframe>
+                  referrerPolicy='no-referrer-when-downgrade'
+                />
               </div>
               {/* <!-- Google Map end --> */}
             </div>
