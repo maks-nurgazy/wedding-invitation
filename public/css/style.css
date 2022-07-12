@@ -5019,8 +5019,8 @@ img {
   border: 1px solid rgba(178, 201, 211, 0.3);
   padding: 35px 25px;
   margin-top: 0;
-}
 
+}
 @media (max-width: 767px) {
   .shop-single-section .product-info .tab-content {
     border: 0;
