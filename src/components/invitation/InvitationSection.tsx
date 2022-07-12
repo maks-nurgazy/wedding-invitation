@@ -16,7 +16,7 @@ export function InvitationSection() {
                   дорогих, любимых и важных для нас людей. С огромным удовольствием приглашаем вас разделить с нами этот
                   праздник.
                 </p>
-                <a href='#rsvp' className='theme-btn' id='scroll'>
+                <a href='#contact-section' className='theme-btn' id='scroll'>
                   RSVP now
                 </a>
               </div>
