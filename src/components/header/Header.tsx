@@ -32,7 +32,7 @@ export function Header() {
             </button>
             <ul className='nav navbar-nav'>
               <li className='menu-item-has-children'>
-                <a href='#'>Home</a>
+                <a href='#'>Главная</a>
               </li>
               <li className='menu-item-has-children'>
                 <a href='#story-section'>История любви</a>

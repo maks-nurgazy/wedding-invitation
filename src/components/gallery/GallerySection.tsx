@@ -5,7 +5,7 @@ export function GallerySection() {
         <div className='row'>
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
             <div className='section-title'>
-              <h2>ЗАПИСАННЫЕ МОМЕНТЫ</h2>
+              <h2>Галерея</h2>
               <p>
                 Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
                 out with a fur hat

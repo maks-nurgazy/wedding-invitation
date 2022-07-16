@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './invitation.style.scss';
+
 export function InvitationSection() {
   return (
     <section className='invitation-section section-padding'>
@@ -8,8 +11,7 @@ export function InvitationSection() {
               <div className='left-vec'></div>
               <div className='right-vec'></div>
               <div className='inner'>
-                <h2>Save the Date</h2>
-                <span>Дорогой(ая)</span>
+                <h2>Дорогой(ая)</h2>
                 <h3>Максатбек & Актилек</h3>
                 <p>
                   спешим сообщить тебе классную новость. У НАС СВАДЬБА! В этот день мы хотим оказаться в окружении самых
@@ -17,7 +19,7 @@ export function InvitationSection() {
                   праздник.
                 </p>
                 <a href='#contact-section' className='theme-btn' id='scroll'>
-                  RSVP now
+                  Подтвердить присутствие
                 </a>
               </div>
             </div>
