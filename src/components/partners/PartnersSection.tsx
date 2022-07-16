@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './partners.style.scss';
+
 export function PartnersSection() {
   return (
     <section className='partners-section section-padding p-t-0'>

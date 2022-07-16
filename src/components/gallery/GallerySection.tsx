@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './gallery.style.scss';
+
 export function GallerySection() {
   return (
     <section id='gallery-section' className='gallery-section section-padding p-t-0'>

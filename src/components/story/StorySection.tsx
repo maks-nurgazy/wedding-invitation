@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './story.style.scss';
+
 export function StorySection() {
   return (
     <section id='story-section' className='story-section section-padding p-t-0'>

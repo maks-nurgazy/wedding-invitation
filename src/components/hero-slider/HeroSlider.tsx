@@ -1,4 +1,8 @@
+/* External dependencies */
 import { useEffect, useState } from 'react';
+
+/* Local dependencies */
+import './hero-slider.style.scss';
 
 interface HeroSliderProps {
   date: Date;

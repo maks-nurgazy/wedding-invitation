@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './event.style.scss';
+
 export function EventSection() {
   return (
     <section className='event-section section-padding p-t-0'>

@@ -1,0 +1,164 @@
+.partners-section h2 {
+  margin: 0;
+  display: inline-block;
+  background: #fff;
+  font-size: 12px;
+  font-size: 0.8rem;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 4px 8.5px 1.5px rgba(178, 201, 211, 0.33);
+  box-shadow: 0px 4px 8.5px 1.5px rgba(178, 201, 211, 0.33);
+}
+
+.partners-section .grid {
+  width: 25%;
+  float: left;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  margin: -1px 0 0 -1px;
+  padding: 25px;
+}
+
+@media (max-width: 767px) {
+  .partners-section .grid {
+    width: 50%;
+  }
+}
+
+.partners-section img {
+  display: inline-block;
+}
+
+.partners-section-s2 {
+  padding-top: 145px;
+}
+
+@media (max-width: 991px) {
+  .partners-section-s2 {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  .partners-section-s2 {
+    padding-top: 115px;
+  }
+}
+
+/*--------------------------------------------------------------
+#1.3	blog-section
+--------------------------------------------------------------*/
+.blog-section {
+  background-color: #f8f8f7;
+  padding-bottom: 65px;
+}
+
+@media (max-width: 991px) {
+  .blog-section {
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-section {
+    padding-bottom: 35px;
+  }
+}
+
+.blog-section .blog-grids {
+  margin: 0 -15px;
+}
+
+@media (max-width: 767px) {
+  .blog-section .blog-grids {
+    margin: 0 -7.5px;
+  }
+}
+
+.blog-section .blog-grids .grid {
+  width: calc(33.33% - 30px);
+  float: left;
+  margin: 0 15px 50px;
+}
+
+@media (max-width: 991px) {
+  .blog-section .blog-grids .grid {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-section .blog-grids .grid {
+    width: calc(50% - 15px);
+    margin: 0 7.5px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .blog-section .blog-grids .grid {
+    width: calc(100% - 15px);
+  }
+}
+
+.blog-section .blog-grids .details {
+  padding: 33px 30px 0;
+}
+
+@media (max-width: 991px) {
+  .blog-section .blog-grids .details {
+    padding: 25px 0 0;
+  }
+}
+
+.blog-section .blog-grids h3 {
+  font-size: 20px;
+  font-size: 1.33333rem;
+  font-weight: 600;
+  margin: 0 0 0.7em;
+}
+
+@media (max-width: 991px) {
+  .blog-section .blog-grids h3 {
+    font-size: 18px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-section .blog-grids h3 {
+    font-size: 16px;
+    font-size: 1.06667rem;
+  }
+}
+
+.blog-section .blog-grids h3 a {
+  color: #202a41;
+}
+
+.blog-section .blog-grids h3 a:hover {
+  color: #b2c9d3;
+}
+
+.blog-section .blog-grids .date {
+  font-size: 11px;
+  font-size: 0.73333rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.blog-section .blog-grids .date i {
+  font-size: 15px;
+  font-size: 1rem;
+  color: #b2c9d3;
+  display: inline-block;
+  padding-right: 5px;
+}

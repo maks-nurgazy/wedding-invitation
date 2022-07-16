@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './header.style.scss';
+
 export function Header() {
   return (
     <header id='header' className='site-header header-style-1'>

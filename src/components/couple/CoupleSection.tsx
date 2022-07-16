@@ -1,3 +1,6 @@
+/* Local dependencies */
+import './couple.style.scss';
+
 export function CoupleSection() {
   return (
     <section className='couple-section section-padding p-t-0'>

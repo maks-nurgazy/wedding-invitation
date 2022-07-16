@@ -1,4 +1,5 @@
-import './style.scss';
+/* Local dependencies */
+import './contact.style.scss';
 
 export function ContactSection() {
   return (
