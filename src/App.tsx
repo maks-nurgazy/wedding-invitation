@@ -1,6 +1,7 @@
 /* Local dependencies */
 
 import { ContactSection } from './components/contact/ContactSection';
+import { EventSection } from './components/event/EventSection';
 import { Footer } from './components/footer/Footer';
 import { GallerySection } from './components/gallery/GallerySection';
 import { Header } from './components/header/Header';
@@ -22,8 +23,8 @@ function App() {
         <StorySection />
         <GallerySection />
         <ContactSection />
+        <EventSection />
         <PlanningSection />
-        {/* <EventSection /> */}
         {/* <PartnersSection /> */}
         <Footer />
       </div>

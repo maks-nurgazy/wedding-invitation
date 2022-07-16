@@ -16,7 +16,7 @@
 }
 
 .event-section .top-area {
-  background: url('../images/event-bg.jpg') center center/cover no-repeat local;
+  background: url('../../../public/images/slider/slide-3.jpg') center center/cover no-repeat local;
   text-align: center;
   width: 100%;
   height: 60%;
@@ -24,6 +24,21 @@
   position: absolute;
   left: 0;
   top: 0;
+
+  &::before {
+    content: '';
+    background: -webkit-linear-gradient(#b2c9d3 30%, transparent);
+    background: -moz-linear-gradient(#b2c9d3 30%, transparent);
+    background: -o-linear-gradient(#b2c9d3 30%, transparent);
+    background: -ms-linear-gradient(#b2c9d3 30%, transparent);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #b2c9d3), to(transparent));
+    background: linear-gradient(#b2c9d3 30%, transparent);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -36,21 +51,6 @@
   .event-section .top-area {
     padding: 80px 0 0;
   }
-}
-
-.event-section .top-area:before {
-  content: '';
-  background: -webkit-linear-gradient(top, #b2c9d3 30%, transparent);
-  background: -moz-linear-gradient(top, #b2c9d3 30%, transparent);
-  background: -o-linear-gradient(top, #b2c9d3 30%, transparent);
-  background: -ms-linear-gradient(top, #b2c9d3 30%, transparent);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #b2c9d3), to(transparent));
-  background: linear-gradient(top, #b2c9d3 30%, transparent);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .event-section .top-area h2,

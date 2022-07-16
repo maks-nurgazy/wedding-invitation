@@ -6,7 +6,7 @@ export function PlanningSection() {
     <section id='planning' className='atf-section-padding'>
       <div className='container'>
         <div className='row clearfix'>
-          <div className='col-xl-6 col-lg-6 col-12'>
+          <div className='col-xl-12 col-lg-12 col-12'>
             {/* <!-- Google Map start--> */}
             <div id='atf-map-area'>
               <iframe
@@ -21,80 +21,6 @@ export function PlanningSection() {
             </div>
             {/* <!-- Google Map end --> */}
           </div>
-          {/* <!--- END COL --> */}
-
-          <div
-            className='col-xl-6 col-lg-6 col-12 pl-lg-5 justify-content-start atf-planning-sinlge wow fadeInRight'
-            data-wow-duration='1s'
-            data-wow-delay='0.3s'
-            data-wow-offset='0'
-          >
-            <div className='atf-section-title text-left'>
-              <h5>План</h5>
-              <h2 className='mb-3'>Когда & Где</h2>
-            </div>
-
-            <div className='row clearfix'>
-              <div className='col-6'>
-                <div className='atf-planning-time text-center'>
-                  <div className='atf-planning-icon'>
-                    <i className='fas fa-carrot'>
-                      <FaCarrot />
-                    </i>
-                  </div>
-                  <div className='atf-planning-title'>
-                    <h3>Фуршет</h3>
-                    <ul className='atf-planning-ceremony'>
-                      <li className='atf-date'>
-                        <a href='#'>Пон, 23 Авг, 2022</a>
-                      </li>
-                      <li className='atf-time'>
-                        <a href='#'>9am-4pm</a>
-                      </li>
-                      <li className='atf-location'>
-                        <a href='#'>
-                          "Мурас" этно-ресторан <br /> Каракол
-                        </a>
-                      </li>
-                      <li className='atf-phone'>
-                        <a href='#'>+996700105000</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className='col-6'>
-                <div className='atf-planning-time text-center'>
-                  <div className='atf-planning-icon'>
-                    <i className='far fa-lemon'>
-                      <FaRegLemon />
-                    </i>
-                  </div>
-                  <div className='atf-planning-title'>
-                    <h3>Банкет</h3>
-                    <ul className='atf-planning-ceremony'>
-                      <li className='atf-date'>
-                        <a href='#'>Пон, 23 Авг, 2022</a>
-                      </li>
-                      <li className='atf-time'>
-                        <a href='#'>8am-4pm</a>
-                      </li>
-                      <li className='atf-location'>
-                        <a href='#'>
-                          Marco Polo <br /> Каракол
-                        </a>
-                      </li>
-                      <li className='atf-phone'>
-                        <a href='#'>+996701751595</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <!--- END COL --> */}
-          </div>
-          {/* <!--- END COL --> */}
         </div>
         {/* <!--- END ROW --> */}
       </div>
