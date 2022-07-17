@@ -22,9 +22,9 @@ function App() {
         {/* <CoupleSection /> */}
         <StorySection />
         <GallerySection />
-        <ContactSection />
         <EventSection />
         <PlanningSection />
+        <ContactSection />
         {/* <PartnersSection /> */}
         <Footer />
       </div>
