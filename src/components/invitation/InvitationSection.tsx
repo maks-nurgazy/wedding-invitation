@@ -1,7 +1,11 @@
 /* Local dependencies */
 import './invitation.style.scss';
 
-export function InvitationSection() {
+interface InvitationSectionProps {
+  guest: string;
+}
+
+export function InvitationSection(props: InvitationSectionProps) {
   return (
     <section className='invitation-section section-padding'>
       <div className='container'>
@@ -12,7 +16,7 @@ export function InvitationSection() {
               <div className='right-vec'></div>
               <div className='inner'>
                 <h2>Дорогой(ая)</h2>
-                <h3>Максатбек & Актилек</h3>
+                <h3>{props.guest}</h3>
                 <p>
                   спешим сообщить тебе классную новость. У НАС СВАДЬБА! В этот день мы хотим оказаться в окружении самых
                   дорогих, любимых и важных для нас людей. С огромным удовольствием приглашаем вас разделить с нами этот

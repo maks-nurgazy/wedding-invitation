@@ -1,5 +1,7 @@
-/* Local dependencies */
+/* External dependencies */
+import { useParams } from 'react-router-dom';
 
+/* Local dependencies */
 import { ContactSection } from './components/contact/ContactSection';
 import { EventSection } from './components/event/EventSection';
 import { Footer } from './components/footer/Footer';
@@ -12,13 +14,15 @@ import { Preloader } from './components/preloader/Preloader';
 import { StorySection } from './components/story/StorySection';
 
 function App() {
+  let params = useParams();
+
   return (
     <div className='App'>
       <div className='page-wrapper flower-fixed-body'>
         <Preloader />
         <Header />
         <HeroSlider date={new Date('08/22/2022 23:59:59')} />
-        <InvitationSection />
+        <InvitationSection guest={params.guest + ':'} />
         {/* <CoupleSection /> */}
         <StorySection />
         <GallerySection />
