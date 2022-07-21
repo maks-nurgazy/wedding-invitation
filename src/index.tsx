@@ -1,7 +1,7 @@
 /* External dependencies */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 /* Local dependencies */
 import App from './App';
@@ -10,9 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path=':guest' element={<App />}></Route>
-    </Routes>
+    <App />
   </BrowserRouter>,
 );
 
