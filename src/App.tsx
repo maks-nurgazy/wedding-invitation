@@ -22,7 +22,7 @@ function App() {
         <Preloader />
         <Header />
         <HeroSlider date={new Date('08/22/2022 23:59:59')} />
-        <InvitationSection guest={params.guest + ':'} />
+        <InvitationSection id={`${params.id}`} />
         {/* <CoupleSection /> */}
         <StorySection />
         <GallerySection />

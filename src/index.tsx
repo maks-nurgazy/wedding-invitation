@@ -1,6 +1,6 @@
 /* External dependencies */
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 /* Local dependencies */
 import App from './App';
@@ -11,7 +11,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path=':guest' element={<App />} />
+      <Route path=':id' element={<App />} />
     </Routes>
   </BrowserRouter>,
 );

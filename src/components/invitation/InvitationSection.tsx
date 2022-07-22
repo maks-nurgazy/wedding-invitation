@@ -2,10 +2,39 @@
 import './invitation.style.scss';
 
 interface InvitationSectionProps {
-  guest: string;
+  id: string;
 }
 
+interface Guest {
+  title: string;
+  name: string;
+}
+
+const guests: Record<string, Guest> = {
+  aika: {
+    title: 'Дорогая',
+    name: 'Айгерим',
+  },
+  maks: {
+    title: 'Дорогой',
+    name: 'Максатбек',
+  },
+  tilek: {
+    title: 'Дорогой',
+    name: 'Тилек',
+  },
+  uli: {
+    title: 'Дорогая',
+    name: 'Уулжан',
+  },
+};
+
 export function InvitationSection(props: InvitationSectionProps) {
+  const guest = guests[props.id] || {
+    title: 'Дорогой(ая)',
+    name: '',
+  };
+
   return (
     <section className='invitation-section section-padding'>
       <div className='container'>
@@ -15,8 +44,8 @@ export function InvitationSection(props: InvitationSectionProps) {
               <div className='left-vec'></div>
               <div className='right-vec'></div>
               <div className='inner'>
-                <h2>Дорогой(ая)</h2>
-                <h3>{props.guest}</h3>
+                <h2>{guest.title}</h2>
+                <h3>{guest.name}</h3>
                 <p>
                   спешим сообщить тебе классную новость. У НАС СВАДЬБА! В этот день мы хотим оказаться в окружении самых
                   дорогих, любимых и важных для нас людей. С огромным удовольствием приглашаем вас разделить с нами этот
