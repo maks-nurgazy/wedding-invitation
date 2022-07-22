@@ -1,39 +1,13 @@
 /* Local dependencies */
+import { getGuest } from '../../guests';
 import './invitation.style.scss';
 
 interface InvitationSectionProps {
   id: string;
 }
 
-interface Guest {
-  title: string;
-  name: string;
-}
-
-const guests: Record<string, Guest> = {
-  aika: {
-    title: 'Дорогая',
-    name: 'Айгерим',
-  },
-  maks: {
-    title: 'Дорогой',
-    name: 'Максатбек',
-  },
-  tilek: {
-    title: 'Дорогой',
-    name: 'Тилек',
-  },
-  uli: {
-    title: 'Дорогая',
-    name: 'Уулжан',
-  },
-};
-
 export function InvitationSection(props: InvitationSectionProps) {
-  const guest = guests[props.id] || {
-    title: 'Дорогой(ая)',
-    name: '',
-  };
+  const guest = getGuest(props.id);
 
   return (
     <section className='invitation-section section-padding'>

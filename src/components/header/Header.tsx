@@ -1,7 +1,13 @@
 /* Local dependencies */
 import './header.style.scss';
 
-export function Header() {
+interface HeaderProps {
+  id: string;
+}
+
+export function Header(props: HeaderProps) {
+  const logoHref = `/${props.id}`;
+
   return (
     <header id='header' className='site-header header-style-1'>
       <div className='topbar'>
@@ -9,7 +15,7 @@ export function Header() {
           <div className='row'>
             <div className='col col-xs-12'>
               <div className='site-logo'>
-                <a href='index.html'>
+                <a href={logoHref}>
                   <h1>Argen & Zhanara</h1>
                   <span>Свадьба</span>
                 </a>
