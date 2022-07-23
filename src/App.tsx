@@ -9,6 +9,7 @@ import { GallerySection } from './components/gallery/GallerySection';
 import { Header } from './components/header/Header';
 import { HeroSlider } from './components/hero-slider/HeroSlider';
 import { InvitationSection } from './components/invitation/InvitationSection';
+import { NotFound } from './components/not-found/NotFound';
 import { PlanningSection } from './components/planning/PlanningSection';
 import { Preloader } from './components/preloader/Preloader';
 import { StorySection } from './components/story/StorySection';
@@ -19,7 +20,7 @@ function App() {
   const guestId = params.id;
   const isGuestInvited = hasInvited(`${guestId}`);
 
-  return (
+  const allPage = (
     <div className='App'>
       <div className='page-wrapper flower-fixed-body'>
         <Preloader />
@@ -37,6 +38,8 @@ function App() {
       </div>
     </div>
   );
+
+  return isGuestInvited ? allPage : <NotFound />;
 }
 
 export default App;
