@@ -1,7 +1,27 @@
+/* External dependencies */
+import { useState } from 'react';
+
 /* Local dependencies */
 import './contact.style.scss';
 
 export function ContactSection() {
+  const [contactInfo, setContactInfo] = useState({
+    name: '',
+    notes: '',
+  });
+
+  const handleChange = (event: any) => {
+    setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = (event: any) => {
+    // prevents the submit button from refreshing the page
+    event.preventDefault();
+    setContactInfo({ name: '', notes: '' });
+  };
+
+  
+
   return (
     <section id='contact-section' className='contact-section section-padding p-t-0'>
       <div className='container'>
@@ -9,48 +29,34 @@ export function ContactSection() {
           <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
             <div className='section-title'>
               <h2>Вы подтверждаете присутствие?</h2>
-              <p>
-                Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
-                out with a fur hat
-              </p>
+              <p>Подтвердите свое присутствие, заполнив поля ниже</p>
             </div>
           </div>
         </div>
         <div className='row'>
           <div className='col col-lg-10 col-lg-offset-1'>
             <div className='contact-form'>
-              <form id='rsvp-form' className='form validate-rsvp-form row' method='post'>
-                <div className='col col-sm-6'>
-                  <input type='text' name='name' className='form-control' placeholder='Your Name*' />
+              <form id='rsvp-form' className='form validate-rsvp-form row' onSubmit={handleSubmit}>
+                <div className='col col-12'>
+                  <input
+                    type='text'
+                    name='name'
+                    className='form-control'
+                    placeholder='Ваше имя*'
+                    onChange={handleChange}
+                    value={contactInfo.name}
+                  />
                 </div>
-                <div className='col col-sm-6'>
-                  <input type='email' name='email' className='form-control' placeholder='Your Email*' />
+                <div className='col col-12'>
+                  <textarea
+                    className='form-control'
+                    name='notes'
+                    placeholder='Ваше сообщение*'
+                    onChange={handleChange}
+                    value={contactInfo.notes}
+                  />
                 </div>
-                <div className='col col-sm-6'>
-                  <select className='form-control' name='guest'>
-                    <option disabled value={1}>
-                      Number Of Guest*
-                    </option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </div>
-                <div className='col col-sm-6'>
-                  <select className='form-control' name='events'>
-                    <option disabled value={'Al events'}>
-                      I Am Attending*
-                    </option>
-                    <option>Al events</option>
-                    <option>Wedding ceremony</option>
-                    <option>Reception party</option>
-                  </select>
-                </div>
-                <div className='col col-sm-12'>
-                  <textarea className='form-control' name='notes' placeholder='Your Message*'></textarea>
-                </div>
-                <div className='col col-sm-12 submit-btn'>
+                <div className='col col-12 submit-btn'>
                   <button type='submit' className='theme-btn'>
                     Подтвердить
                   </button>
@@ -67,7 +73,6 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-      {/* <!-- end container --> */}
     </section>
   );
 }
