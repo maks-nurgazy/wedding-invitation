@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 
 /* Local dependencies */
+import { NotFound } from './components/not-found/NotFound';
 import { ContactSection } from './components/contact/ContactSection';
 import { EventSection } from './components/event/EventSection';
 import { Footer } from './components/footer/Footer';
@@ -9,7 +10,6 @@ import { GallerySection } from './components/gallery/GallerySection';
 import { Header } from './components/header/Header';
 import { HeroSlider } from './components/hero-slider/HeroSlider';
 import { InvitationSection } from './components/invitation/InvitationSection';
-import { NotFound } from './components/not-found/NotFound';
 import { PlanningSection } from './components/planning/PlanningSection';
 import { Preloader } from './components/preloader/Preloader';
 import { StorySection } from './components/story/StorySection';
