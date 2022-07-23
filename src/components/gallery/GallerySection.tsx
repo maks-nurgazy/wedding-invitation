@@ -10,8 +10,8 @@ export function GallerySection() {
             <div className='section-title'>
               <h2>Галерея</h2>
               <p>
-                Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
-                out with a fur hat
+                {/* Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
+                out with a fur hat */}
               </p>
             </div>
           </div>
