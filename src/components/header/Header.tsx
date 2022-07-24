@@ -53,7 +53,7 @@ export function Header(props: HeaderProps) {
                 <a href='#planning'>Адрес</a>
               </li>
               <li>
-                <a href='#contact-section'>Contact</a>
+                <a href='#contact-section'>Контакт</a>
               </li>
             </ul>
           </div>
