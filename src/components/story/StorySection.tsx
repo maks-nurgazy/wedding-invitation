@@ -58,7 +58,6 @@ export function StorySection() {
           </div>
         </div>
       </div>
-      {/* <!-- end container --> */}
     </section>
   );
 }

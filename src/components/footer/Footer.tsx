@@ -11,22 +11,22 @@ export function Footer() {
         <h2>Thank you</h2>
         <ul className='social-links'>
           <li>
-            <a href='#'>
+            <a href='https://www.facebook.com/fMaksatbek/'>
               <i className='ti-facebook'></i>
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://twitter.com/maksnurgazy'>
               <i className='ti-twitter-alt'></i>
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://www.linkedin.com/in/maksatbek-bolushov/'>
               <i className='ti-linkedin'></i>
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://www.pinterest.com/maksatbekbolushov/'>
               <i className='ti-pinterest'></i>
             </a>
           </li>
