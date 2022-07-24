@@ -102,9 +102,21 @@ export const guests: Guests = {
     title: 'Дорогой',
     name: 'Эрлан',
   },
+  elena: {
+    title: 'Дорогая',
+    name: 'Елана',
+  },
+  'jeenbek-aigerim': {
+    title: 'Дорогие',
+    name: 'Жээнбек и Айгерим',
+  },
   gulnara: {
     title: 'Дорогая',
     name: 'Гулнара',
+  },
+  gulbarchyn: {
+    title: 'Дорогая',
+    name: 'Гулбарчын',
   },
   'maisalbek-maksuda': {
     title: 'Дорогие',
