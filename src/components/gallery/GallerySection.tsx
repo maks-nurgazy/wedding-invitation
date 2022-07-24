@@ -56,7 +56,13 @@ export function GallerySection() {
                 </a>
               </div> */}
 
-              <div className='grid grid-item'>
+              <div className='grid grid-item width2'>
+                <a href='/images/gallery/img-6.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                  <img src='/images/gallery/img-6.jpg' className='img img-responsive' alt='' />
+                </a>
+              </div>
+
+              {/* <div className='grid grid-item'>
                 <a
                   href='https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1'
                   data-type='iframe'
@@ -65,7 +71,7 @@ export function GallerySection() {
                   <img src='/images/gallery/img-6.jpg' className='img img-responsive' alt='' />
                   <i className='ti-control-play'></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

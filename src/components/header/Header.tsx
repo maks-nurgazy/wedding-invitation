@@ -40,16 +40,16 @@ export function Header(props: HeaderProps) {
               <i className='ti-close'></i>
             </button>
             <ul className='nav navbar-nav'>
-              <li className='menu-item-has-children'>
+              <li>
                 <a href='#'>Главная</a>
               </li>
-              <li className='menu-item-has-children'>
+              <li>
                 <a href='#story-section'>История любви</a>
               </li>
-              <li className='menu-item-has-children'>
+              <li>
                 <a href='#gallery-section'>Галерея</a>
               </li>
-              <li className='menu-item-has-children'>
+              <li>
                 <a href='#planning'>Адрес</a>
               </li>
               <li>
@@ -57,9 +57,7 @@ export function Header(props: HeaderProps) {
               </li>
             </ul>
           </div>
-          {/* <!-- end of nav-collapse --> */}
         </div>
-        {/* <!-- end of container --> */}
       </nav>
     </header>
   );
