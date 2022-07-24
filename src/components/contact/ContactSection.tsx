@@ -1,7 +1,10 @@
 /* External dependencies */
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 /* Local dependencies */
+import { ddbClient } from '../../clients/clients';
 import './contact.style.scss';
 
 export function ContactSection() {
@@ -17,10 +20,20 @@ export function ContactSection() {
   const handleSubmit = (event: any) => {
     // prevents the submit button from refreshing the page
     event.preventDefault();
-    setContactInfo({ name: '', notes: '' });
-  };
+    if (contactInfo.name !== '') {
+      console.log(contactInfo.name);
 
-  
+      ddbClient
+        .post('/create/', {
+          item: contactInfo.name,
+          message: contactInfo.notes,
+        })
+        .then((res) => {
+          toast.dark('Успешно подтверждено!');
+          setContactInfo({ name: '', notes: '' });
+        });
+    }
+  };
 
   return (
     <section id='contact-section' className='contact-section section-padding p-t-0'>
@@ -36,6 +49,7 @@ export function ContactSection() {
         <div className='row'>
           <div className='col col-lg-10 col-lg-offset-1'>
             <div className='contact-form'>
+              <ToastContainer />
               <form id='rsvp-form' className='form validate-rsvp-form row' onSubmit={handleSubmit}>
                 <div className='col col-12'>
                   <input
