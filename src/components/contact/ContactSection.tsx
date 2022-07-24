@@ -21,8 +21,6 @@ export function ContactSection() {
     // prevents the submit button from refreshing the page
     event.preventDefault();
     if (contactInfo.name !== '') {
-      console.log(contactInfo.name);
-
       ddbClient
         .post('/create/', {
           item: contactInfo.name,
