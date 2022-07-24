@@ -20,7 +20,7 @@ export function StorySection() {
                 <li>
                   <div className='details'>
                     <h3>Первая встреча</h3>
-                    <span className='date'>25 Dec 2018</span>
+                    <span className='date'>25 Декабрь 2018</span>
                     <p>
                       Однажды осенью, увидев свои зубы, я подумал, пора бы навестить стоматолога. Знакомая дала номер
                       хорошего врача и им оказалась Жанара.
