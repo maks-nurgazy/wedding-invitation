@@ -9,14 +9,19 @@ export function PlanningSection() {
           <div className='col-xl-12 col-lg-12 col-12'>
             <div id='atf-map-area'>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753556.4668595708!2d75.24148805470863!3d42.45795273179457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389b259f87c3f61f%3A0x2fc64168a1c70e54!2z0KDQtdGB0YLQvtGA0LDQvSDQnNGD0YDQsNGB!5e0!3m2!1sru!2skg!4v1657641646185!5m2!1sru!2skg'
-                width='600'
-                height='450'
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading='lazy'
-                referrerPolicy='no-referrer-when-downgrade'
+                src='https://www.google.com.qa/maps/d/u/0/embed?mid=1Ig53jTqe4Jr7Vba-yClxy7v8e8ulgLU&ehbc=2E312F'
+                width='640'
+                height='600'
               ></iframe>
+              {/* <div style={{ width: '100%', overflow: 'hidden', height: '800px' }}>
+              <iframe
+                src='https://www.google.com.qa/maps/d/u/0/embed?mid=1Ig53jTqe4Jr7Vba-yClxy7v8e8ulgLU&ehbc=2E312F'
+                width='1200'
+                height='800'
+                frameBorder={0}
+                style={{ border: 0, marginTop: '-150px' }}
+              ></iframe>
+              </div> */}
             </div>
           </div>
         </div>
