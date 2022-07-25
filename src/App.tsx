@@ -56,13 +56,13 @@ function App() {
         <Preloader />
         <Header id={`${guestId}`} />
         <HeroSlider date={new Date('08/22/2022 23:59:59')} />
-        <InvitationSection guest={groupGuest} loading />
+        <InvitationSection guest={groupGuest} loading={loading} />
         {/* <CoupleSection /> */}
         <StorySection />
         <GallerySection />
         <EventSection />
         <PlanningSection />
-        <ContactSection />
+        <ContactSection names={groupGuest.names} />
         {/* <PartnersSection /> */}
         <Footer />
       </div>

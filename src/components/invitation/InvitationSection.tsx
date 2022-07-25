@@ -1,3 +1,6 @@
+/* External dependencies */
+import ReactLoading from 'react-loading';
+
 /* Local dependencies */
 import { getGuest } from '../../guests';
 import './invitation.style.scss';
@@ -15,6 +18,16 @@ interface InvitationSectionProps {
 }
 
 export function InvitationSection({ guest, loading }: InvitationSectionProps) {
+  const load = (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <ReactLoading type={'balls'} color={'#000000'} height={'20%'} width={'20%'} />
+    </div>
+  );
+
+  console.log(loading);
+
+  const LoadItem = loading ? load : null;
+
   return (
     <section className='invitation-section section-padding'>
       <div className='container'>
@@ -26,6 +39,7 @@ export function InvitationSection({ guest, loading }: InvitationSectionProps) {
               <div className='inner'>
                 <h2>{guest.title}</h2>
                 <h3>{guest.names}</h3>
+                {LoadItem}
                 <p>
                   Спешим сообщить классную новость. У нас свадьба! В этот день мы хотим оказаться в окружении самых
                   дорогих, любимых и важных для нас людей. С огромным удовольствием приглашаем вас разделить с нами этот
