@@ -5,7 +5,7 @@ export function EventSection() {
   return (
     <section className='event-section section-padding p-t-0'>
       <div className='top-area'>
-        <h2>Празднуйте нашу любовь</h2>
+        <h2>Празднуйте нашу любовь вместе с нами</h2>
         <p className='date'>23 Авг 2022</p>
       </div>
       <div className='container'>
@@ -14,24 +14,24 @@ export function EventSection() {
             <div className='event-grids clearfix'>
               <div className='grid'>
                 <h3>Фуршет</h3>
-                <p>Пон, 23 Авг, 2022, "Мурас" этно-ресторан, Каракол</p>
-                <p className='phone'>Тел: +996700105000</p>
+                <p>Среда 13:00, 24 Авг 2022, Marco Polo, Каракол</p>
+                <p className='phone'>По всем вопросам обращаться по номеру телефона: +996700105000</p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
                 </a>
               </div>
               <div className='grid'>
                 <h3>Церемония</h3>
-                <p>Пон, 23 Авг, 2022, "Мурас" этно-ресторан, Каракол</p>
-                <p className='phone'>Тел: +996700105000</p>
+                <p>Среда 15:00, 24 Авг 2022, Marco Polo, Каракол</p>
+                <p className='phone'>По всем вопросам обращаться по номеру телефона: +996700105000</p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
                 </a>
               </div>
               <div className='grid'>
                 <h3>Банкет</h3>
-                <p>Пон, 23 Авг, 2022, Marco Polo, Каракол</p>
-                <p className='phone'>Тел: +996701751595</p>
+                <p>Среда 18:00, 24 Авг 2022, "Мурас" этно-ресторан, Каракол</p>
+                <p className='phone'>По всем вопросам обращаться по номеру телефона: +996701751595</p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
                 </a>
