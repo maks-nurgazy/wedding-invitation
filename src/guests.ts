@@ -7,7 +7,7 @@ type Guests = Record<string, Guest>;
 
 export const guests: Guests = {
   adinai: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Адинай',
   },
   adis: {
@@ -15,179 +15,183 @@ export const guests: Guests = {
     name: 'Адис',
   },
   aiana: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Аяна',
   },
   aidai: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айдай',
   },
   aidaibraimova: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Аида Ибраимова',
   },
   aijana: {
-    title: 'Дорогая',
-    name: 'Дастан и Кулпунай',
-  },
-  'aikut-ulkan': {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'Айжана',
   },
+  'aikut-ulkan': {
+    title: 'Дорогой(ая)',
+    name: 'Айкут и Уулкан',
+  },
   airin: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айрин',
   },
   aisezim: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айсезим',
   },
   aitemir: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айтемир',
   },
   aizat: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айзат',
   },
   aizirek: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Айзирек',
   },
   aktilek: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Актилек',
   },
   aleksandraleksandrovich: {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'Александр Александрович',
   },
   alina: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Алина',
   },
   'amantur-aicholpon': {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'Амантур жезде и Айчолпон эже',
   },
   annaaleksandrovna: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Анна Александровна',
   },
   arslan: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Арслан',
   },
   azamat: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Азамат',
   },
   begimai: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Бегимай',
   },
   bermet: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Бермет',
   },
   dastan: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Дастан',
   },
-  'dastan-kulpunai': {
-    title: 'Дорогие',
-    name: 'Дастан и Кулпунай',
+  'doston-kulpunai': {
+    title: 'Дорогой(ая)',
+    name: 'Достон и Кулпунай',
   },
   erlan: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Эрлан',
   },
   elena: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Елана',
   },
   'jeenbek-aigerim': {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'Жээнбек и Айгерим',
   },
   gulnara: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Гулнара',
   },
   gulbarchyn: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Гулбарчын',
   },
   'maisalbek-maksuda': {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'папа Майсалбек и мама Максуда',
   },
   maksat: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Максат',
   },
   marat: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Марат',
   },
+  'marat-alina': {
+    title: 'Дорогой(ая)',
+    name: 'Марат и Алина',
+  },
   meerimai: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Мээримай',
   },
   mirbek: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Мирбек',
   },
   'nurgazy-ayim': {
-    title: 'Дорогие',
+    title: 'Дорогой(ая)',
     name: 'Нургазы и Айым',
   },
   nurperi: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Нурпери',
   },
   nursultan: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Нурсултан',
   },
   oscar: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Оскар',
   },
   renat: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Ренат',
   },
   rustam: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Рустам',
   },
   saltanat: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Салтанат',
   },
   shaiken: {
-    title: 'Дорогой',
-    name: 'Шайкан',
+    title: 'Дорогой(ая)',
+    name: 'Шайкен',
   },
   talant: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Талант',
   },
   tatyana: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Татьяна',
   },
   tynara: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Тынара',
   },
   victoria: {
-    title: 'Дорогая',
+    title: 'Дорогой(ая)',
     name: 'Виктория',
   },
   vlad: {
-    title: 'Дорогой',
+    title: 'Дорогой(ая)',
     name: 'Влад',
   },
 };
