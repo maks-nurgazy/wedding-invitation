@@ -18,6 +18,17 @@ export function LightGallerySection() {
   return (
     <section id='gallery-section' className='gallery-section section-padding p-t-0'>
       <div className='container'>
+        <div className='row'>
+          <div className='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+            <div className='section-title'>
+              <h2>Галерея</h2>
+              <p>
+                {/* Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted
+                out with a fur hat */}
+              </p>
+            </div>
+          </div>
+        </div>
         <LightGallery plugins={[lgZoom, lgVideo]} mode='lg-fade'>
           <a
             data-lg-size='591-887'
