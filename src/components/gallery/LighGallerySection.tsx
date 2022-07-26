@@ -2,8 +2,6 @@
 import LightGallery from 'lightgallery/react';
 import 'lightgallery/scss/lightgallery.scss';
 import 'lightgallery/scss/lg-zoom.scss';
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import { LightGallerySettings } from 'lightgallery/lg-settings';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgVideo from 'lightgallery/plugins/video';
 
@@ -29,16 +27,79 @@ export function LightGallerySection() {
             </div>
           </div>
         </div>
-        <LightGallery plugins={[lgZoom, lgVideo]} mode='lg-fade'>
-          <a
-            data-lg-size='591-887'
-            className='gallery-item'
-            data-src='/images/gallery/img-1.jpg'
-            data-sub-html="<h4>Photo by - <a href='https://unsplash.com/@entrycube' >Diego Guzmán </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/fushimi-inari-taisha-shrine-senbontorii%2C-68%E7%95%AA%E5%9C%B0-fukakusa-yabunouchicho%2C-fushimi-ward%2C-kyoto%2C-japan'>Fushimi Ward, Kyoto, Japan</a></p>"
-          >
-            <img className='img-responsive' src='/images/gallery/img-1.jpg' />
-          </a>
-        </LightGallery>
+
+        <div className='row'>
+          <div className='col col-xs-12'>
+            <div className='gallery-container gallery-fancybox masonry-gallery'>
+              <LightGallery plugins={[lgZoom, lgVideo]} mode='lg-fade'>
+                <div
+                  data-src='/images/gallery/img-1.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a>
+                    <img className='img img-responsive' src='/images/gallery/img-1.jpg' />
+                  </a>
+                </div>
+                <div
+                  data-src='/images/gallery/img-2.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a href='/images/gallery/img-2.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                    <img src='/images/gallery/img-2.jpg' className='img img-responsive' alt='' />
+                  </a>
+                </div>
+
+                <div
+                  data-src='/images/gallery/img-4.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a href='/images/gallery/img-4.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                    <img src='/images/gallery/img-4.jpg' className='img img-responsive' alt='' />
+                  </a>
+                </div>
+
+                <div
+                  data-src='/images/gallery/img-3.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a href='/images/gallery/img-3.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                    <img src='/images/gallery/img-3.jpg' className='img img-responsive' alt='' />
+                  </a>
+                </div>
+
+                <div
+                  data-src='/images/gallery/img-6.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a href='/images/gallery/img-6.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                    <img src='/images/gallery/img-6.jpg' className='img img-responsive' alt='' />
+                  </a>
+                </div>
+
+                <div
+                  data-src='/images/gallery/img-9.jpg'
+                  className=' grid grid-item'
+                  // data-lg-size='591-887'
+                  data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
+                >
+                  <a href='/images/gallery/img-9.jpg' className='fancybox' data-fancybox-group='gall-1'>
+                    <img src='/images/gallery/img-9.jpg' className='img img-responsive' alt='' />
+                  </a>
+                </div>
+              </LightGallery>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
