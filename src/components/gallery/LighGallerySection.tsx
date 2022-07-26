@@ -7,6 +7,7 @@ import lgVideo from 'lightgallery/plugins/video';
 
 /* Local dependencies */
 import './gallery.style.scss';
+import './ligh-gallery.style.scss';
 
 export function LightGallerySection() {
   const onInit = () => {
@@ -39,7 +40,7 @@ export function LightGallerySection() {
                   data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
                 >
                   <a>
-                    <img className='img img-responsive' src='/images/gallery/img-1.jpg' />
+                    <img className='img img-responsive tall-img' src='/images/gallery/img-1.jpg' />
                   </a>
                 </div>
                 <div
@@ -49,7 +50,7 @@ export function LightGallerySection() {
                   data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
                 >
                   <a href='/images/gallery/img-2.jpg' className='fancybox' data-fancybox-group='gall-1'>
-                    <img src='/images/gallery/img-2.jpg' className='img img-responsive' alt='' />
+                    <img src='/images/gallery/img-2.jpg' className='img img-responsive tall-img' alt='' />
                   </a>
                 </div>
 
@@ -60,7 +61,7 @@ export function LightGallerySection() {
                   data-sub-html="<h4>Photo by - <a href='https://www.instagram.com/maksnurgazy/' >Maksatek Bolushov </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/moscov'>Moscov</a></p>"
                 >
                   <a href='/images/gallery/img-4.jpg' className='fancybox' data-fancybox-group='gall-1'>
-                    <img src='/images/gallery/img-4.jpg' className='img img-responsive' alt='' />
+                    <img src='/images/gallery/img-4.jpg' className='img img-responsive tall-img' alt='' />
                   </a>
                 </div>
 
