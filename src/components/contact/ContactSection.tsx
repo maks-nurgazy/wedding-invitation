@@ -43,7 +43,7 @@ export function ContactSection(props: ContactSectionProps) {
           toast.dark('Успешно подтверждено😍!');
           setContactInfo({ name: '', notes: '' });
         });
-    } else if (props.names) {
+    } else if (!props.names) {
       toast.error('Вы не приглашены');
     } else {
       toast.error('Заполните все поля!');
