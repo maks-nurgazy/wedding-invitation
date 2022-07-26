@@ -55,7 +55,7 @@ function App() {
       <div className='page-wrapper flower-fixed-body'>
         <Preloader />
         <Header id={`${guestId}`} />
-        <HeroSlider date={new Date('08/22/2022 23:59:59')} />
+        <HeroSlider date={new Date('08/24/2022 18:00:00')} />
         <InvitationSection guest={groupGuest} loading={loading} />
         {/* <CoupleSection /> */}
         <StorySection />
