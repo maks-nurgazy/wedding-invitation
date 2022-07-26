@@ -1,3 +1,8 @@
+/* External dependencies */
+import LightGallery from 'lightgallery/react';
+import 'lightgallery/scss/lightgallery.scss';
+import 'lightgallery/scss/lg-zoom.scss';
+
 /* Local dependencies */
 import './gallery.style.scss';
 
@@ -75,9 +80,7 @@ export function GallerySection() {
             </div>
           </div>
         </div>
-        {/* <!-- end row --> */}
       </div>
-      {/* <!-- end container --> */}
     </section>
   );
 }

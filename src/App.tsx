@@ -17,6 +17,7 @@ import { hasInvited } from './guests';
 import { ddbClient } from './clients/clients';
 import { useEffect, useState } from 'react';
 import _ from 'lodash';
+import { LightGallerySection } from './components/gallery/LighGallerySection';
 
 function App() {
   let params = useParams();
@@ -59,7 +60,8 @@ function App() {
         <InvitationSection guest={groupGuest} loading={loading} />
         {/* <CoupleSection /> */}
         <StorySection />
-        <GallerySection />
+        {/* <GallerySection /> */}
+        <LightGallerySection />
         <EventSection />
         <PlanningSection />
         <ContactSection names={groupGuest.names} />
