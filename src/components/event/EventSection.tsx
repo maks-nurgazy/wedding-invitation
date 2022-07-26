@@ -12,10 +12,9 @@ export function EventSection() {
         <div className='row'>
           <div className='col col-xs-12'>
             <div className='event-grids clearfix'>
-              <div className='grid'>
+              {/* <div className='grid'>
                 <h3>Фуршет</h3>
                 <p>Среда 13:00, 24 Авг 2022, Marco Polo, Каракол</p>
-                {/* <p className='phone'>По всем вопросам обращаться по номеру телефона: +996700105000</p> */}
                 <p></p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
@@ -24,16 +23,14 @@ export function EventSection() {
               <div className='grid'>
                 <h3>Церемония</h3>
                 <p>Среда 15:00, 24 Авг 2022, Marco Polo, Каракол</p>
-                {/* <p className='phone'>По всем вопросам обращаться по номеру телефона: +996700105000</p> */}
                 <p></p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
                 </a>
-              </div>
+              </div> */}
               <div className='grid'>
                 <h3>Банкет</h3>
                 <p>Среда 18:00, 24 Авг 2022, "Мурас" этно-ресторан, Каракол</p>
-                {/* <p className='phone'>По всем вопросам обращаться по номеру телефона: +996701751595</p> */}
                 <p></p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение
