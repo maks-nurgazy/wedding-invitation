@@ -6,7 +6,7 @@ export function EventSection() {
     <section className='event-section section-padding p-t-0'>
       <div className='top-area'>
         <h2>Празднуйте нашу любовь вместе с нами</h2>
-        <p className='date'>23 Авг 2022</p>
+        <p className='date'>24 Авг 2022</p>
       </div>
       <div className='container'>
         <div className='row'>
