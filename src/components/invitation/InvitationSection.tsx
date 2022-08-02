@@ -24,8 +24,6 @@ export function InvitationSection({ guest, loading }: InvitationSectionProps) {
     </div>
   );
 
-  console.log(loading);
-
   const LoadItem = loading ? load : null;
 
   return (
@@ -53,7 +51,6 @@ export function InvitationSection({ guest, loading }: InvitationSectionProps) {
           </div>
         </div>
       </div>
-      {/* <!-- end container --> */}
     </section>
   );
 }
