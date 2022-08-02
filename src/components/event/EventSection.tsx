@@ -30,7 +30,7 @@ export function EventSection() {
               </div> */}
               <div className='grid'>
                 <h3>Банкет</h3>
-                <p>Среда 18:00, 24 Авг 2022, "Мурас" этно-ресторан, Каракол</p>
+                <p>Среда 17:00, 24 Авг 2022, Алтын көл, Каракол</p>
                 <p></p>
                 <a href='#planning' className='location popup-gmaps'>
                   Посмотреть местоположение

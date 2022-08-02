@@ -22,9 +22,17 @@ export function PlanningSection() {
                   style={{ border: 0, marginTop: '-150px' }}
                 ></iframe> */}
 
-                <iframe
+                {/* <iframe
                   src='https://www.google.com.qa/maps/d/u/0/embed?mid=1Ig53jTqe4Jr7Vba-yClxy7v8e8ulgLU&ehbc=2E312F'
                   width='1200'
+                  height='800'
+                  frameBorder={0}
+                  style={{ border: 0, marginTop: '-150px' }}
+                ></iframe> */}
+
+                <iframe
+                  src='https://www.google.com.qa/maps/d/u/0/embed?mid=1Ig53jTqe4Jr7Vba-yClxy7v8e8ulgLU&ehbc=2E312F'
+                  width='640'
                   height='800'
                   frameBorder={0}
                   style={{ border: 0, marginTop: '-150px' }}
